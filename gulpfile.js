@@ -14,6 +14,7 @@ var autoprefixer = require('gulp-autoprefixer'),
     gulp = require('gulp'),
     notify = require('gulp-notify'),
     p = require('./package.json'),
+    pug = require('gulp-pug'),
     sass = require('gulp-sass');
 
 
@@ -46,9 +47,12 @@ gulp.task('styles', function() {
     .pipe(browserSync.stream());
 });
 
-// Copy Index
-gulp.task('refresh', function() {
-    gulp.src(source+'index.html')
+gulp.task('pug',function() {
+    return gulp.src(source+'views/*.pug')
+    .pipe(pug({
+        doctype: 'html',
+        pretty: true
+    }))
     .pipe(gulp.dest(dist))
     .pipe(browserSync.stream());
 });
@@ -65,7 +69,7 @@ gulp.task('copy', function() {
 
 gulp.task('default', function() {
 
-    gulp.start('styles', 'refresh', 'copy');
+    gulp.start('styles', 'pug', 'copy');
 
     browserSync.init({
         server: {
@@ -77,7 +81,7 @@ gulp.task('default', function() {
     gulp.watch(source+'scss/**/*.scss', ['styles']);
 
     // Watch index file
-    gulp.watch(source+'index.html', ['refresh']);
+    gulp.watch(source+'views/**/*.pug', ['pug']);
 
     // Watch images directory
     gulp.watch(source+'img/**/*', ['copy']);
