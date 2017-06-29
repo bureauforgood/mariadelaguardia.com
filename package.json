@@ -1,0 +1,21 @@
+{
+  "name": "mariadelaguardia",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://paulcham@github.com/paulcham/mariadelaguardia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulcham/mariadelaguardia/issues"
+  },
+  "homepage": "https://github.com/paulcham/mariadelaguardia#readme",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}
