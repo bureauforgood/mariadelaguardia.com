@@ -1,9 +1,8 @@
-// USF Starterkit
-// (c) Blue State Digital
+// Maria De La Guardia Pages
 
 // TASKS
 // ------
-// `gulp`: watch, compile styles and scripts, browsersync
+// `gulp`: watch, compile styles and pug, browsersync
 
 
 // PLUGINS
@@ -47,6 +46,7 @@ gulp.task('styles', function() {
   .pipe(browserSync.stream());
 });
 
+// Compile Pug
 gulp.task('pug',function() {
   return gulp.src(source+'views/*.pug')
   .pipe(pug({
