@@ -3,8 +3,94 @@ html(language='en')
 	include /_includes/_html-header.pug
 
 	body
-		h1 Test
-		p Paragraph text
-		ul
-			li List
-			li List
+		include /_includes/_site-header.pug
+
+		header.social
+			a.link(href='#') Dribble
+			a.link(href='#') Behance
+
+		nav.navigation
+			a.link(href='#') About Me
+			a.link(href='#') Organizations I've Served
+
+		main
+			section.hero
+				h1.hero__head I’m an interactive art director focused on #[span.hero__head--strong nonprofits], #[span.hero__head--strong foundations] and news & #[span.hero__head--strong editorial sites].
+				h2.hero__subhead My work includes web, print & identity design, information architecture & illustration.
+
+			section.project.project--layout-a
+				h1.project__head UWUA Minisite
+				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+				a.link--arrow(href="#") Case Study
+				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+				cite.project__citation Kevin Kreshmer, Mood & Method
+				img.project__image(src="http://via.placeholder.com/640x840")
+
+			section.project.project--layout-b
+				h1.project__head Sikh Coalition
+				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+				a.link--arrow(href="#") Case Study
+				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+				cite.project__citation Matt Schwartz, Constructive
+				img.project__image(src="http://via.placeholder.com/640x840")
+
+			section.orgs
+				h1.orgs__head Organizations I've Served
+				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+
+			section.project.project--layout-a
+				h1.project__head PHI
+				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+				a.link--arrow(href="#") Case Study
+				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+				cite.project__citation Kevin Kreshmer, Mood & Method
+				img.project__image(src="http://via.placeholder.com/640x840")
+
+			section.project.project--layout-b
+				h1.project__head Sikh Coalition
+				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+				a.link--arrow(href="#") Case Study
+				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+				cite.project__citation Matt Schwartz, Constructive
+				img.project__image(src="http://via.placeholder.com/640x840")
+
+			section.about
+				h1.about__head About Me
+				p.about__copy I'm a visual and UX designer with over 15 years of experience designing for businesses and nonprofits; and over 8 years designing and managing web design projects. Along with UX and visual design, my experience includes concept development and interactive project management. I hold a BFA in Graphic Design from Texas Christian University, and an MFA in Design from the School of Visual Arts. I live in lovely Ditmas Park, Brooklyn with my husband and son.
+				p.about__copy I’m currently taking on offsite UX, visual design, print, branding & illustration projects. I'm unable to consider onsite opportunities at the moment. Recruiters: please do not contact.
+				a(href='mailto:hello@mariadelaguardia.com') hello@mariadelaguardia.com
+				h2.about__list-head Capabilities
+				ul.about__list
+					li.about__list-item Information architecture & user experience
+					li.about__list-item UI & visual design
+					li.about__list-item Print design
+					li.about__list-item Illustration
+					li.about__list-item Web development  #[small.about__list-item--small in collaboration with my development partners]
+					li.about__list-item Interactive project management
+
+			section.project.project--layout-a
+				h1.project__head Public Interest Registry Media Kit
+				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+				a.link--arrow(href="#") Case Study
+				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+				cite.project__citation Megan Soffer, PIR
+				img.project__image(src="http://via.placeholder.com/640x840")
+
+			section.project.project--layout-b
+				h1.project__head Sikh Coalition
+				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+				a.link--arrow(href="#") Case Study
+				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+				cite.project__citation Matt Schwartz, Constructive
+				img.project__image(src="http://via.placeholder.com/640x840")
+
+		include /_includes/_site-footer.pug

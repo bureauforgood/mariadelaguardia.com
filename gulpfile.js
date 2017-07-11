@@ -58,10 +58,12 @@ gulp.task('pug',function() {
   .pipe(browserSync.stream());
 });
 
-// Copy Images
+// Copy Images & Fonts
 gulp.task('copy', function() {
   gulp.src([source+'img/**/*'])
-  .pipe(gulp.dest(dist+'img'))
+  .pipe(gulp.dest(dist+'img'));
+  gulp.src([source+'webfonts/**/*'])
+  .pipe(gulp.dest(dist+'webfonts'))
   .pipe(browserSync.stream());
 });
 

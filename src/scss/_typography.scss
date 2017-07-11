@@ -1,0 +1,22 @@
+$sans-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif-stack: 'Times New Roman', Times, Georgia, serif;
+
+@mixin sans-light() {
+    font-family: 'ProbaPro-Light', $sans-stack;
+    font-weight: normal;
+}
+
+@mixin sans-reg() {
+    font-family: 'ProbaPro-Regular', $sans-stack;
+    font-weight: normal;
+}
+
+@mixin sans-bold() {
+    font-family: 'ProbaPro-Bold', $sans-stack;
+    font-weight: normal;
+}
+
+@mixin serif-bold() {
+    font-family: 'Noe-Display-Bold', $serif-stack;
+    font-weight: normal;
+}

@@ -1,13 +1,18 @@
 @import "./node_modules/normalize.css/normalize";
 
+@import 'variables';
+@import 'fonts';
+@import 'typography';
+
 @import 'layout';
+@import 'links';
 
 @import 'header';
 @import 'footer';
 
 @import 'hero';
 @import 'project';
-@import 'logos';
+@import 'orgs';
 @import 'about';
 
 @import 'case-study';
