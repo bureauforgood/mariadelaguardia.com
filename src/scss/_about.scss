@@ -4,6 +4,12 @@
     padding-bottom: 200px;
 }
 
+.about__wrapper {
+    @include wrapper;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
 .about__head {
     @include serif-bold;
     font-size: 30px;

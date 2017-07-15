@@ -3,10 +3,17 @@
     padding: 80px 30px 200px;
 }
 
+.orgs__wrapper {
+    @include wrapper;
+}
+
 .orgs__logos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
+    @include md {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 .orgs__head {

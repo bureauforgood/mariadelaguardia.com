@@ -18,6 +18,9 @@
     letter-spacing: 1.56px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    @include md {
+        margin-bottom: 35px;
+    }
 }
 
 .site-footer__tel {
@@ -25,6 +28,9 @@
     font-size: 40px;
     line-height: 1;
     margin-bottom: 6px;
+    @include md {
+        font-size: 50px;
+    }
 }
 
 .site-footer__email {
@@ -33,4 +39,7 @@
     line-height: 1;
     text-decoration: none;
     color: $text-black;
+    @include md {
+        font-size: 50px;
+    }
 }

@@ -1,16 +1,22 @@
 .hero {
     background: $peach;
-    //min-height: 100vh;
     justify-content: center;
     padding: 210px 20px 300px;
+    @include md {
+        padding: 100px 50px;
+    }
 }
 
 .hero__wrapper {
     @include wrapper;
+    display: inherit;
+    align-items: center;
 }
 
 .hero__info {
-
+    @include md {
+        padding-right: 22%;
+    }
 }
 
 .hero__head {
@@ -18,6 +24,9 @@
     font-size: 32px;
     line-height: 1.125;
     margin-bottom: 10px;
+    @include md {
+        font-size: 40px;
+    }
 }
 
 .hero__head--strong {

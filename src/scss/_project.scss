@@ -5,6 +5,7 @@
 
 .project__wrapper {
     @include wrapper;
+    display: inherit;
 }
 
 .project--last {
