@@ -5,11 +5,13 @@
 body {
     border: 10px solid $peach-dark;
     @include sans-reg;
+    background-color: $peach;
+    color: $text-black;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 }
 
 section {

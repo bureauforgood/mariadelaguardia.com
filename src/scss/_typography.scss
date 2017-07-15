@@ -17,6 +17,6 @@ $serif-stack: 'Times New Roman', Times, Georgia, serif;
 }
 
 @mixin serif-bold() {
-    font-family: 'Noe-Display-Bold', $serif-stack;
-    font-weight: bold;
+    font-family: "NoeDisplay-Bold", $serif-stack;
+    font-weight: normal;
 }

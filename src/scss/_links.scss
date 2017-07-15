@@ -1,6 +1,6 @@
 .link {
     @include sans-reg;
-    font-size: 10px;
+    font-size: 12px;
     text-transform: uppercase;
     text-decoration: none;
     color: $text-black;
@@ -8,5 +8,22 @@
     transition: color $timing linear;
     &:hover {
         color: $orange;
+    }
+}
+
+.link--arrow {
+    color: $orange;
+    margin: 10px 0 20px;
+    display: inline-block;
+    &:after {
+        content: "";
+        width: 13px;
+        height: 11px;
+        display: inline-block;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.58 10.5' fill='#{$orange}' stroke='none'><polygon points='6.49 9.6 7.38 10.5 12.58 5.25 7.38 0 6.49 0.9 10.16 4.61 0 4.61 0 5.9 10.16 5.9 6.49 9.6'/></svg>");
+        background-repeat: no-repeat;
+    }
+    &:hover {
+        color: $text-black;
     }
 }
