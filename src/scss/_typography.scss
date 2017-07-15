@@ -11,8 +11,18 @@ $serif-stack: 'Times New Roman', Times, Georgia, serif;
     font-weight: normal;
 }
 
+@mixin sans-semibold() {
+    font-family: 'ProbaPro-Semibold', $sans-stack;
+    font-weight: normal;
+}
+
 @mixin sans-bold() {
     font-family: 'ProbaPro-Bold', $sans-stack;
+    font-weight: normal;
+}
+
+@mixin serif-reg() {
+    font-family: "NoeDisplay-Regular", $serif-stack;
     font-weight: normal;
 }
 
