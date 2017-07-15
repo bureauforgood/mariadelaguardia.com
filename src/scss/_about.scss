@@ -6,8 +6,10 @@
 
 .about__wrapper {
     @include wrapper;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    @include md {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 .about__head {

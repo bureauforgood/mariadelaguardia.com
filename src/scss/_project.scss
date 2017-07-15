@@ -5,7 +5,9 @@
 
 .project__wrapper {
     @include wrapper;
-    display: inherit;
+    @include md {
+        display: inherit;
+    }
 }
 
 .project--last {
