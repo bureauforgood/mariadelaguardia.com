@@ -20,6 +20,13 @@ $blue-overlay: #DBEDF9;
 $light-yellow: #F5F0D9;
 
 //GLOBAL SETTINGS
+
+@mixin wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @mixin section-padding() {
     padding-left: 20px;
     padding-right: 20px;

@@ -1,33 +1,54 @@
 .site-header {
     position: absolute;
-    @include section-padding;
-    padding-top: 35px;
+    padding: 35px 20px 0;
+    @include md {
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+        @include wrapper;
+    }
 }
 
 .site-header__head {
     @include serif-bold;
     font-size: 17px;
     margin-bottom: 6px;
+    @include md {
+        display: inline-block;
+        margin-right: 36px;
+    }
 }
 
 .site-header__link {
     font-size: 10px;
     color: $text-black;
     margin: 0;
-}
-
-.social {
-    position: absolute;
-    display: none;
     @include md {
-        display: block;
+        display: inline-block;
     }
 }
 
-.navigation {
-    position: absolute;
+.social-links {
     display: none;
     @include md {
         display: block;
+        position: absolute;
+        top: 70px;
+        left: calc( 100% - 40px );
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+    }
+}
+
+.navigation-links {
+    display: none;
+    @include md {
+        display: block;
+        position: absolute;
+        bottom: -50px;
+        left: 40px;
+        transform: rotate(-90deg);
+        transform-origin: 0 0;
+        z-index: 1;
     }
 }

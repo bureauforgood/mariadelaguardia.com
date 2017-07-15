@@ -17,6 +17,7 @@ section {
     display: flex;
     flex-direction: column;
     @include md {
+        position: relative;
         flex-direction: row;
     }
 }

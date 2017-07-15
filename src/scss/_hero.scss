@@ -5,6 +5,10 @@
     padding: 210px 20px 300px;
 }
 
+.hero__wrapper {
+    @include wrapper;
+}
+
 .hero__info {
 
 }

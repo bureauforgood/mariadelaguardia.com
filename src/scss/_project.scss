@@ -3,6 +3,10 @@
     padding-bottom: 200px;
 }
 
+.project__wrapper {
+    @include wrapper;
+}
+
 .project--last {
     padding-bottom: 80px;
     //last project in each group of projects

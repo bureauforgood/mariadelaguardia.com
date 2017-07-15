@@ -13,6 +13,18 @@
     }
 }
 
+.link--nav {
+    color: $text-black;
+    font-size: 10px;
+    margin: 0;
+    &:hover {
+        color: $orange;
+    }
+    & + & {
+        margin-left: 30px;
+    }
+}
+
 .link--arrow {
     display: inline-block;
     &:after {
