@@ -1,15 +1,33 @@
 .hero {
     background: $peach;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero__info {
+
 }
 
 .hero__head {
-
+    @include sans-light;
+    font-size: 32px;
+    line-height: 1.125;
+    margin-bottom: 10px;
 }
 
 .hero__head--strong {
-
+    @include serif-bold;
 }
 
 .hero__subhead {
+    font-size: 18px;
+    line-height: 1.44;
+}
 
+.hero__image {
+    display: none;
+    @include md {
+        display: block;
+    }
 }

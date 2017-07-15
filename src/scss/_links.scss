@@ -1,0 +1,12 @@
+.link {
+    @include sans-reg;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $text-black;
+    letter-spacing: 1px;
+    transition: color $timing linear;
+    &:hover {
+        color: $orange;
+    }
+}

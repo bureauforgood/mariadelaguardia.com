@@ -4,6 +4,7 @@
 
 body {
     border: 10px solid $peach-dark;
+    @include sans-reg;
 }
 
 main {
@@ -16,5 +17,14 @@ section {
     flex-direction: column;
     @include md {
         flex-direction: row;
+    }
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    @include md {
+        width: auto;
+        max-width: none;
     }
 }

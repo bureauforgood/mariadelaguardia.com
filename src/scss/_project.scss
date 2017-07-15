@@ -2,6 +2,10 @@
 
 }
 
+.project__info {
+    order: 2;
+}
+
 .project--layout-a {
 
 }
@@ -26,5 +30,5 @@
 }
 
 .project__image {
-
+    order: 1;
 }

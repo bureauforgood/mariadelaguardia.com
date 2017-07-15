@@ -15,23 +15,27 @@ html(language='en')
 
 		main
 			section.hero
-				h1.hero__head I’m an interactive art director focused on #[span.hero__head--strong nonprofits], #[span.hero__head--strong foundations] and news & #[span.hero__head--strong editorial sites].
-				h2.hero__subhead My work includes web, print & identity design, information architecture & illustration.
+				.hero__info
+					h1.hero__head I’m an interactive art director focused on #[span.hero__head--strong nonprofits], #[span.hero__head--strong foundations] and #[span.hero__head--strong news & editorial sites].
+					h2.hero__subhead My work includes web, print & identity design, information architecture & illustration.
+				img.hero__image(src="http://via.placeholder.com/284x580")
 
-			section.project.project--layout-a
-				h1.project__head UWUA Minisite
-				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-				a.link--arrow(href="#") Case Study
-				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
-				cite.project__citation Kevin Kreshmer, Mood & Method
+			section.project.project--layout-a(style='background-color:#DEF1E1;')
+				.project__info
+					h1.project__head UWUA Minisite
+					p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					a.link--arrow(href="#") Case Study
+					blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+					cite.project__citation Kevin Kreshmer, Mood & Method
 				img.project__image(src="http://via.placeholder.com/640x840")
 
-			section.project.project--layout-b
-				h1.project__head Sikh Coalition
-				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-				a.link--arrow(href="#") Case Study
-				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
-				cite.project__citation Matt Schwartz, Constructive
+			section.project.project--layout-b(style='background-color:#FFF;')
+				.project__info
+					h1.project__head Sikh Coalition
+					p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					a.link--arrow(href="#") Case Study
+					blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+					cite.project__citation Matt Schwartz, Constructive
 				img.project__image(src="http://via.placeholder.com/640x840")
 
 			section.orgs
@@ -47,20 +51,22 @@ html(language='en')
 				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
 				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
 
-			section.project.project--layout-a
-				h1.project__head PHI
-				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-				a.link--arrow(href="#") Case Study
-				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
-				cite.project__citation Kevin Kreshmer, Mood & Method
+			section.project.project--layout-a(style='background-color:#DEF1E1;')
+				.project__info
+					h1.project__head PHI
+					p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					a.link--arrow(href="#") Case Study
+					blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+					cite.project__citation Kevin Kreshmer, Mood & Method
 				img.project__image(src="http://via.placeholder.com/640x840")
 
-			section.project.project--layout-b
-				h1.project__head Sikh Coalition
-				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-				a.link--arrow(href="#") Case Study
-				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
-				cite.project__citation Matt Schwartz, Constructive
+			section.project.project--layout-b(style='background-color:#E8E6EB;')
+				.project__info
+					h1.project__head Sikh Coalition
+					p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					a.link--arrow(href="#") Case Study
+					blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+					cite.project__citation Matt Schwartz, Constructive
 				img.project__image(src="http://via.placeholder.com/640x840")
 
 			section.about
@@ -77,20 +83,13 @@ html(language='en')
 					li.about__list-item Web development  #[small.about__list-item--small in collaboration with my development partners]
 					li.about__list-item Interactive project management
 
-			section.project.project--layout-a
-				h1.project__head Public Interest Registry Media Kit
-				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-				a.link--arrow(href="#") Case Study
-				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
-				cite.project__citation Megan Soffer, PIR
-				img.project__image(src="http://via.placeholder.com/640x840")
-
-			section.project.project--layout-b
-				h1.project__head Sikh Coalition
-				p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-				a.link--arrow(href="#") Case Study
-				blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
-				cite.project__citation Matt Schwartz, Constructive
+			section.project.project--layout-a(style='background-color:#F5F0D9;')
+				.project__info
+					h1.project__head Public Interest Registry Media Kit
+					p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					a.link--arrow(href="#") Case Study
+					blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+					cite.project__citation Megan Soffer, PIR
 				img.project__image(src="http://via.placeholder.com/640x840")
 
 		include /_includes/_site-footer.pug

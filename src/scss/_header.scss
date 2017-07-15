@@ -1,6 +1,27 @@
 .site-header {
+    position: absolute;
+    @include section-padding;
+    padding-top: 35px;
 }
 
 .site-header__head {
     @include serif-bold;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.social {
+    position: absolute;
+    display: none;
+    @include md {
+        display: block;
+    }
+}
+
+.navigation {
+    position: absolute;
+    display: none;
+    @include md {
+        display: block;
+    }
 }

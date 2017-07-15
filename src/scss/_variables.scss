@@ -1,7 +1,23 @@
 // COLORS
 $peach: #FBF2EE;
 $peach-dark: #F1E3DD;
+$mint: #DEF1E1;
+$light-purple: #E8E6EB;
+$mustard: #F5F0D9;
+$text-black: #353535;
+$orange: #EE5D2F;
 
+
+//GLOBAL SETTINGS
+@mixin section-padding() {
+    padding-left: 20px;
+    padding-right: 20px;
+    @include md {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+$timing: 0.15s;
 
 // MEDIA QUERIES
 // Small tablets and large smartphones (landscape view)
