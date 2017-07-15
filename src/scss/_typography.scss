@@ -30,3 +30,9 @@ $serif-stack: 'Times New Roman', Times, Georgia, serif;
     font-family: "NoeDisplay-Bold", $serif-stack;
     font-weight: normal;
 }
+
+@mixin body-copy {
+    font-size: 18px;
+    line-height: 1.44;
+    margin-bottom: 10px;
+}

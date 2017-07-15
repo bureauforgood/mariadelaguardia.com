@@ -1,3 +1,36 @@
 .about {
-    background-color: $peach;
+    @include section-padding;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+.about__head {
+    @include serif-bold;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.about__copy {
+    @include body-copy;
+}
+
+.about__list-head {
+    @include sans-semibold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.about__list-item {
+    font-size: 16px;
+    line-height: 1.31;
+    margin-bottom: 15px;
+}
+
+.about__list-item--small {
+    display: block;
+    font-size: 12px;
 }

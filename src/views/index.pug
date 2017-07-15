@@ -10,8 +10,8 @@ html(language='en')
 			a.link(href='#') Behance
 
 		nav.navigation
-			a.link(href='#') About Me
-			a.link(href='#') Organizations I've Served
+			a.link(href='#about') About Me
+			a.link(href='#organizations') Organizations I've Served
 
 		main
 			section.hero
@@ -20,78 +20,83 @@ html(language='en')
 					h2.hero__subhead My work includes web, print & identity design, information architecture & illustration.
 				img.hero__image(src="http://via.placeholder.com/284x580")
 
-			section.project.project--layout-a(style='background-color:#DEF1E1;')
+			section.project.project--layout-a.project--teal
 				.project__info
 					h1.project__head UWUA Minisite
 					p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 					a.link.link--arrow(href="#") Case Study
-					blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+					blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 					cite.project__citation Kevin Kreshmer, Mood & Method
 				.project__image
 					img(src="/img/uwua-fpo.jpg")
 
-			section.project.project--layout-b(style='background-color:#FFF;')
+			section.project.project--layout-b.project--blue.project--last
 				.project__info
 					h1.project__head Sikh Coalition
 					p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-					a.link--arrow(href="#") Case Study
-					blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+					a.link.link--arrow(href="#") Case Study
+					blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 					cite.project__citation Matt Schwartz, Constructive
 				.project__image
 					img(src="/img/uwua-fpo.jpg")
 
-			section.orgs
+			section.orgs#organizations
 				h1.orgs__head Organizations I've Served
-				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
-				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
-				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
-				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
-				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
-				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
-				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
-				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
-				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
-				a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+				.orgs__logos
+					a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+					a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+					a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+					a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+					a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+					a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+					a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+					a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+					a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
+					a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
 
-			section.project.project--layout-a(style='background-color:#DEF1E1;')
+			section.project.project--layout-a.project--teal
 				.project__info
-					h1.project__head PHI
+					h1.project__head UWUA Minisite
 					p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-					a.link--arrow(href="#") Case Study
-					blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+					a.link.link--arrow(href="#") Case Study
+					blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 					cite.project__citation Kevin Kreshmer, Mood & Method
-				img.project__image(src="http://via.placeholder.com/640x840")
+				.project__image
+					img(src="/img/uwua-fpo.jpg")
 
-			section.project.project--layout-b(style='background-color:#E8E6EB;')
+			section.project.project--layout-b.project--blue.project--last
 				.project__info
 					h1.project__head Sikh Coalition
 					p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-					a.link--arrow(href="#") Case Study
-					blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+					a.link.link--arrow(href="#") Case Study
+					blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 					cite.project__citation Matt Schwartz, Constructive
-				img.project__image(src="http://via.placeholder.com/640x840")
+				.project__image
+					img(src="/img/uwua-fpo.jpg")
 
-			section.about
+			section.about#about
 				h1.about__head About Me
 				p.about__copy I'm a visual and UX designer with over 15 years of experience designing for businesses and nonprofits; and over 8 years designing and managing web design projects. Along with UX and visual design, my experience includes concept development and interactive project management. I hold a BFA in Graphic Design from Texas Christian University, and an MFA in Design from the School of Visual Arts. I live in lovely Ditmas Park, Brooklyn with my husband and son.
 				p.about__copy I’m currently taking on offsite UX, visual design, print, branding & illustration projects. I'm unable to consider onsite opportunities at the moment. Recruiters: please do not contact.
-				a(href='mailto:hello@mariadelaguardia.com') hello@mariadelaguardia.com
+				a.link(href='mailto:hello@mariadelaguardia.com') hello@mariadelaguardia.com
 				h2.about__list-head Capabilities
 				ul.about__list
 					li.about__list-item Information architecture & user experience
 					li.about__list-item UI & visual design
+					li.about__list-item Visual brand identity
 					li.about__list-item Print design
 					li.about__list-item Illustration
 					li.about__list-item Web development  #[small.about__list-item--small in collaboration with my development partners]
 					li.about__list-item Interactive project management
 
-			section.project.project--layout-a(style='background-color:#F5F0D9;')
+			section.project.project--layout-c.project--yellow.project--last
 				.project__info
 					h1.project__head Public Interest Registry Media Kit
 					p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-					a.link--arrow(href="#") Case Study
-					blockquote.project__quote "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue."
+					a.link.link--arrow(href="#") Case Study
+					blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 					cite.project__citation Megan Soffer, PIR
-				img.project__image(src="http://via.placeholder.com/640x840")
+				.project__image
+					img(src="/img/uwua-fpo.jpg")
 
 		include /_includes/_site-footer.pug

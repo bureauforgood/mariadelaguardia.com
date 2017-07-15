@@ -21,8 +21,7 @@
 }
 
 .hero__subhead {
-    font-size: 18px;
-    line-height: 1.44;
+    @include body-copy;
 }
 
 .hero__image {

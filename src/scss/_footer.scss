@@ -1,5 +1,36 @@
 .site-footer {
+    @include section-padding;
     text-align: center;
     align-items: center;
-    padding: 30vh 10vw;
+    justify-content: center;
+    padding-top: 40vh;
+    padding-bottom: 40vh;
+}
+
+.site-footer__info {
+    align-self: center;
+}
+
+.site-footer__head {
+    @include sans-semibold;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 1.56px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.site-footer__tel {
+    @include serif-bold;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.site-footer__email {
+    @include serif-bold;
+    font-size: 19px;
+    line-height: 1;
+    text-decoration: none;
+    color: $text-black;
 }

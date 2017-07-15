@@ -1,16 +1,23 @@
 // COLORS
+$white: #fff;
+$black: #000;
+$text-black: #353535;
+
 $peach: #FBF2EE;
 $peach-dark: #F1E3DD;
-$mint: #DEF1E1;
+
 $light-purple: #E8E6EB;
 $mustard: #F5F0D9;
-$text-black: #353535;
 $orange: #EE5D2F;
+
 $teal: #057664;
+$light-teal: #DEF1E1;
+$teal-overlay: rgba(0,0,0,0.05);
 
-$overlay-gray: #D2E0DD;
-$overlay-gray: rgba(0,0,0,0.05);
+$blue: #1290F0;
+$blue-overlay: #DBEDF9;
 
+$light-yellow: #F5F0D9;
 
 //GLOBAL SETTINGS
 @mixin section-padding() {

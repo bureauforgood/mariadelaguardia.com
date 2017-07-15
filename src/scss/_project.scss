@@ -3,51 +3,46 @@
     padding-bottom: 200px;
 }
 
+.project--last {
+    padding-bottom: 80px;
+    //last project in each group of projects
+}
+
 .project__info {
     order: 2;
 }
 
-.project--layout-a {
-
-}
-
-.project--layout-b {
-
-}
 .project__head {
     @include serif-bold;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 1.2;
     margin-bottom: 6px;
 }
 
 .project__copy {
-    font-size: 18px;
-    line-height: 1.44;
-    margin-bottom: 10px;
+    @include body-copy;
 }
 
 .project__quote {
     @include serif-reg;
     color: $teal;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.3;
     margin-bottom: 10px;
+    hanging-punctuation: first;
 }
 
 .project__citation {
-    @include sans-bold;
+    @include sans-semibold;
     text-transform: uppercase;
     color: $teal;
     font-size: 12px;
+    letter-spacing: 1.42px;
 }
 
 .project__image {
     order: 1;
     position: relative;
-    top: -125px;
-    left: -40px;
-    margin-bottom: calc( -125px + 40px );
     display: block;
     z-index: 1;
     box-shadow: 0 0 60px rgba(0,0,0,0.5);
@@ -57,11 +52,85 @@
         display: block;
         height: 100%;
         width: 100%;
-        background-color: $overlay-gray;
         position: absolute;
-        top: -20px;
-        right: -30px;
         z-index: -1;
-        background-blend-mode: multiply;
+        mix-blend-mode: multiply;
+    }
+}
+
+// LEFT/RIGHT LAYOUTS
+.project--layout-a {
+    .project__image {
+        top: -125px;
+        left: -40px;
+        margin-bottom: calc( -125px + 30px );
+        &:after {
+            top: -20px;
+            right: -30px;
+        }
+    }
+}
+
+.project--layout-b {
+    .project__image {
+        top: -125px;
+        right: -30px;
+        margin-bottom: calc( -125px + 40px );
+        &:after {
+            bottom: -20px;
+            left: -30px;
+        }
+    }
+}
+
+.project--layout-c {
+    .project__image {
+        top: -125px;
+        left: -40px;
+        margin-bottom: calc( -125px + 30px );
+        &:after {
+            top: -20px;
+            right: -30px;
+        }
+    }
+}
+
+// COLOR SCHEMES
+.project--teal {
+    background-color: $light-teal;
+    .project__image {
+        &:after {
+            background-color: $teal-overlay;
+        }
+    }
+    .project__quote,
+    .project__citation {
+        color: $teal;
+    }
+}
+
+.project--blue {
+    background-color: $white;
+    .project__image {
+        &:after {
+            background-color: $blue-overlay;
+        }
+    }
+    .project__quote,
+    .project__citation {
+        color: $blue;
+    }
+}
+
+.project--yellow {
+    background-color: $light-yellow;
+    .project__image {
+        &:after {
+            background-color: $blue-overlay;
+        }
+    }
+    .project__quote,
+    .project__citation {
+        color: $teal;
     }
 }

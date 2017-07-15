@@ -1,7 +1,24 @@
 .orgs {
+    text-align: center;
+    padding: 80px 30px 200px;
+}
 
+.orgs__logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.orgs__head {
+    @include serif-bold;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.orgs__link {
+    display: inherit;
 }
 
 .orgs__logo {
-
 }

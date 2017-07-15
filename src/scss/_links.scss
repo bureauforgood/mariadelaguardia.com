@@ -3,17 +3,17 @@
     font-size: 12px;
     text-transform: uppercase;
     text-decoration: none;
-    color: $text-black;
-    letter-spacing: 1px;
+    color: $orange;
+    letter-spacing: 1.42px;
+    margin-top: 5px;
+    margin-bottom: 25px;
     transition: color $timing linear;
     &:hover {
-        color: $orange;
+        color: $text-black;
     }
 }
 
 .link--arrow {
-    color: $orange;
-    margin: 10px 0 20px;
     display: inline-block;
     &:after {
         content: "";
