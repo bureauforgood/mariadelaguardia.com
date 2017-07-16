@@ -1,0 +1,19 @@
+.casestudy {
+
+}
+
+.casestudy__head {
+
+}
+
+.casestudy__body {
+    @include body-copy;
+}
+
+.casestudy__quote {
+    @include quote;
+}
+
+.casestudy__citation {
+    @include citation;
+}

@@ -1,7 +1,6 @@
 .site-header {
     position: absolute;
     padding: 35px 20px 0;
-    background-color: $peach;
     z-index: 1;
     width: calc( 100% - 20px ); // account for the page border
     @include md {
@@ -44,12 +43,13 @@
         display: block;
         position: absolute;
         top: 70px;
-        left: calc( 100% - 15px );
+        left: calc( 100% - 25px );
         transform: rotate(90deg);
         transform-origin: 0 0;
+        z-index: 1;
     }
     @include lg {
-        left: calc( 100% - 40px );
+        left: calc( 100% - 50px );
     }
 }
 

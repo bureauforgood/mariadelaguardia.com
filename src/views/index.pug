@@ -2,14 +2,11 @@ doctype html
 html(language='en')
 	include /_includes/_html-header.pug
 
-	body
+	body.home
 		include /_includes/_site-header.pug
 
 		main
 			section.hero.decorated
-				header.social-links
-					a.link.link--nav(href='#') Dribble
-					a.link.link--nav(href='#') Behance
 
 				nav.navigation-links
 					a.link.link--nav(href='#about') About Me
@@ -101,6 +98,7 @@ html(language='en')
 							li.about__list-item Interactive project management
 					.about__img.about__img--second
 						img(src="/img/maria-fpo.jpg")
+
 			section.project.project--layout-c.project--yellow.project--last.decorated.project--composed-image
 				.project__wrapper
 					.project__info
