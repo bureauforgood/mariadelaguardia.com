@@ -6,7 +6,7 @@ html(language='en')
 		include /_includes/_site-header.pug
 
 		main
-			section.hero
+			section.hero.decorated
 				header.social-links
 					a.link.link--nav(href='#') Dribble
 					a.link.link--nav(href='#') Behance
@@ -21,7 +21,7 @@ html(language='en')
 						h2.hero__subhead My work includes web, print & identity design, information architecture & illustration.
 					img.hero__image(src="/img/iphone-fpo.png")
 
-			section.project.project--layout-a.project--teal
+			section.project.project--layout-a.project--teal.decorated
 				.project__wrapper
 					.project__info
 						h1.project__head UWUA Minisite
@@ -43,7 +43,7 @@ html(language='en')
 					.project__image
 						img(src="/img/uwua-fpo.jpg")
 
-			section.orgs#organizations
+			section#organizations.orgs.decorated
 				.orgs__wrapper
 					h1.orgs__head Organizations I've Served
 					.orgs__logos
@@ -58,18 +58,18 @@ html(language='en')
 						a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
 						a.orgs__link(href="#"): img.orgs__logo(src="http://via.placeholder.com/150x40")
 
-			section.project.project--layout-a.project--teal
+			section.project.project--layout-a.project--teal.project--composed-image
 				.project__wrapper
 					.project__info
-						h1.project__head UWUA Minisite
+						h1.project__head PHI
 						p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 						a.link.link--arrow(href="#") Case Study
 						blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 						cite.project__citation Kevin Kreshmer, Mood & Method
 					.project__image
-						img(src="/img/uwua-fpo.jpg")
+						img(src="/img/phi-fpo.png")
 
-			section.project.project--layout-b.project--blue.project--last
+			section.project.project--layout-b.project--blue.project--last.decorated
 				.project__wrapper
 					.project__info
 						h1.project__head Sikh Coalition
@@ -80,16 +80,18 @@ html(language='en')
 					.project__image
 						img(src="/img/uwua-fpo.jpg")
 
-			section.about#about
+			section#about.about
 				.about__wrapper
+					.about__img
+						img(src="/img/maria-fpo.jpg")
 					.about__info
 						h1.about__head About Me
 						p.about__copy I'm a visual and UX designer with over 15 years of experience designing for businesses and nonprofits; and over 8 years designing and managing web design projects. Along with UX and visual design, my experience includes concept development and interactive project management. I hold a BFA in Graphic Design from Texas Christian University, and an MFA in Design from the School of Visual Arts. I live in lovely Ditmas Park, Brooklyn with my husband and son.
 						p.about__copy I’m currently taking on offsite UX, visual design, print, branding & illustration projects. I'm unable to consider onsite opportunities at the moment. Recruiters: please do not contact.
 						a.link(href='mailto:hello@mariadelaguardia.com') hello@mariadelaguardia.com
-					.about__info
+					.about__list
 						h2.about__list-head Capabilities
-						ul.about__list
+						ul
 							li.about__list-item Information architecture & user experience
 							li.about__list-item UI & visual design
 							li.about__list-item Visual brand identity
@@ -97,8 +99,9 @@ html(language='en')
 							li.about__list-item Illustration
 							li.about__list-item Web development  #[small.about__list-item--small in collaboration with my development partners]
 							li.about__list-item Interactive project management
-
-			section.project.project--layout-c.project--yellow.project--last
+					.about__img.about__img--second
+						img(src="/img/maria-fpo.jpg")
+			section.project.project--layout-c.project--yellow.project--last.decorated.project--composed-image
 				.project__wrapper
 					.project__info
 						h1.project__head Public Interest Registry Media Kit
@@ -107,6 +110,6 @@ html(language='en')
 						blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 						cite.project__citation Megan Soffer, PIR
 					.project__image
-						img(src="/img/uwua-fpo.jpg")
+						img(src="/img/pir-fpo.jpg")
 
 		include /_includes/_site-footer.pug

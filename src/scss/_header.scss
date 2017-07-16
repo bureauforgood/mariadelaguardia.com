@@ -1,9 +1,19 @@
 .site-header {
     position: absolute;
     padding: 35px 20px 0;
+    background-color: $peach;
+    z-index: 1;
+    width: calc( 100% - 20px ); // account for the page border
     @include md {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 35px 50px 0;
+    }
+    @include lg {
+        padding: 35px 90px 0;
+    }
+}
+
+.site-header__wrapper {
+    @include md {
         position: relative;
         @include wrapper;
     }

@@ -1,6 +1,13 @@
 .orgs {
+    background-color: $peach;
     text-align: center;
     padding: 80px 30px 200px;
+    @include md {
+        padding-top: 160px;
+        padding-bottom: 160px;
+        width: 95%;
+        float: right;
+    }
 }
 
 .orgs__wrapper {
@@ -9,8 +16,11 @@
 
 .orgs__logos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
     grid-gap: 30px;
+    @include md {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
 }
 
 .orgs__head {
@@ -26,6 +36,5 @@
 }
 
 .orgs__logo {
-    width: auto;
-    max-width: none;
+    object-fit: contain;
 }

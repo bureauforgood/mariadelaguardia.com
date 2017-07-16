@@ -4,6 +4,28 @@
     padding: 210px 20px 300px;
     @include md {
         padding: 100px 50px;
+        &:before {
+            content: "";
+            display: block;
+            width: 240px;
+            height: 450px;
+            background-color: rgba($light-yellow,0.5);
+            //background-color: $light-yellow;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            mix-blend-mode: multiply;
+        }
+    }
+    @include lg {
+        padding-left: 90px;
+        padding-right: 90px;
+        &:before {
+            width: 600px;
+            height: 500px;
+            bottom: -50px;
+            right: -100px;
+        }
     }
 }
 
@@ -14,6 +36,7 @@
 }
 
 .hero__info {
+    position: relative;
     @include md {
         padding-right: 6%;
     }
@@ -47,6 +70,7 @@
     display: none;
     @include md {
         display: block;
+        position: relative;
         max-width: 240px;
         box-shadow: 0 0 60px rgba(0,0,0,0.3);
         border-radius: 50px;

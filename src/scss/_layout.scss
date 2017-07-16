@@ -9,7 +9,6 @@ html {
 body {
     border: 10px solid $peach-dark;
     @include sans-reg;
-    background-color: $peach;
     color: $text-black;
 }
 
@@ -28,5 +27,21 @@ img {
     @include md {
         width: auto;
         max-width: none;
+    }
+}
+
+.decorated {
+    @include md {
+        &:after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 260px;
+            background-color: $dark-orange;
+            position: absolute;
+            top: -110px;
+            left: 50%;
+            z-index: 1000;
+        }
     }
 }
