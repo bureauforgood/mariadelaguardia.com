@@ -15,6 +15,9 @@
 
 .hero__info {
     @include md {
+        padding-right: 6%;
+    }
+    @include lg {
         padding-right: 22%;
     }
 }
@@ -25,6 +28,9 @@
     line-height: 1.125;
     margin-bottom: 10px;
     @include md {
+        font-size: 36px;
+    }
+    @include lg {
         font-size: 40px;
     }
 }
@@ -41,5 +47,11 @@
     display: none;
     @include md {
         display: block;
+        max-width: 240px;
+        box-shadow: 0 0 60px rgba(0,0,0,0.3);
+        border-radius: 50px;
+    }
+    @include lg {
+        max-width: 284px;
     }
 }

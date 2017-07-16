@@ -22,6 +22,7 @@ $light-yellow: #F5F0D9;
 //GLOBAL SETTINGS
 
 @mixin wrapper {
+    width: 100%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;

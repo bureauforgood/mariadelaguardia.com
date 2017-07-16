@@ -4,9 +4,11 @@
 }
 
 .project__wrapper {
+    display: inherit;
+    flex-direction: inherit;
     @include wrapper;
     @include md {
-        display: inherit;
+        align-items: center;
     }
 }
 
@@ -24,6 +26,12 @@
     font-size: 32px;
     line-height: 1.2;
     margin-bottom: 6px;
+    @include md {
+        font-size: 30px;
+    }
+    @include lg {
+        font-size: 36px;
+    }
 }
 
 .project__copy {
@@ -37,6 +45,9 @@
     line-height: 1.3;
     margin-bottom: 10px;
     hanging-punctuation: first;
+    @include lg {
+        font-size: 26px;
+    }
 }
 
 .project__citation {
@@ -63,6 +74,16 @@
         z-index: -1;
         mix-blend-mode: multiply;
     }
+    @include md {
+        img {
+            width: 440px;
+        }
+    }
+    @include lg {
+        img {
+            width: 640px;
+        }
+    }
 }
 
 // LEFT/RIGHT LAYOUTS
@@ -75,11 +96,32 @@
             top: -20px;
             right: -30px;
         }
+        @include md {
+            top: -20px;
+            left: -100px;
+            margin-bottom: 0;
+            &:after {
+                top: -30px;
+                right: -40px;
+            }
+        }
+        @include lg {
+            top: -20px;
+            left: -100px;
+            &:after {
+                top: -40px;
+                right: -50px;
+            }
+        }
     }
 }
 
 .project--layout-b {
+    .project__info {
+        order: 1;
+    }
     .project__image {
+        order: 2;
         top: -125px;
         right: -30px;
         margin-bottom: calc( -125px + 40px );

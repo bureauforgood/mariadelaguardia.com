@@ -2,8 +2,8 @@
     position: absolute;
     padding: 35px 20px 0;
     @include md {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 50px;
+        padding-right: 50px;
         position: relative;
         @include wrapper;
     }
@@ -34,9 +34,12 @@
         display: block;
         position: absolute;
         top: 70px;
-        left: calc( 100% - 40px );
+        left: calc( 100% - 15px );
         transform: rotate(90deg);
         transform-origin: 0 0;
+    }
+    @include lg {
+        left: calc( 100% - 40px );
     }
 }
 
@@ -46,9 +49,12 @@
         display: block;
         position: absolute;
         bottom: -50px;
-        left: 40px;
+        left: 15px;
         transform: rotate(-90deg);
         transform-origin: 0 0;
-        z-index: 1;
+        z-index: 10;
+    }
+    @include lg {
+        left: 40px;
     }
 }
