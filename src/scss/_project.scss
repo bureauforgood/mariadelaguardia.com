@@ -167,7 +167,7 @@
             right: -20px;
         }
         @include md {
-            top: -20px;
+            top: 20px;
             left: -100px;
             margin-bottom: 0;
             &:after {
@@ -176,7 +176,7 @@
             }
         }
         @include lg {
-            top: -20px;
+            top: 20px;
             left: -100px;
             &:after {
                 top: 40px;
@@ -197,6 +197,11 @@
     .project__quote,
     .project__citation {
         color: $teal;
+    }
+    &.project--layout-a,
+    &.project--layout-c {
+        background-color: transparent;
+        background-image: linear-gradient(to right, $white, $white 20%, $light-teal 20%, $light-teal);
     }
 }
 
@@ -223,5 +228,9 @@
     .project__quote,
     .project__citation {
         color: $teal;
+    }
+    &.project--layout-c {
+        background-color: transparent;
+        background-image: linear-gradient(to right, $white, $white 20%, $light-yellow 20%, $light-yellow);
     }
 }
