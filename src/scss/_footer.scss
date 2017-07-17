@@ -40,6 +40,10 @@
     line-height: 1;
     text-decoration: none;
     color: $text-black;
+    transition: color $timing linear;
+    &:hover {
+        color: $orange;
+    }
     @include md {
         font-size: 50px;
     }

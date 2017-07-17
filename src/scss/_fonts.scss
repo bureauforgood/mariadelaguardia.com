@@ -29,39 +29,38 @@
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/340735");
 
-
 @font-face {
     font-family: 'ProbaPro-Light';
-    src: url('./webfonts/Proba-Pro-Light.eot');
-    src: url('./webfonts/Proba-Pro-Light.eot?#iefix') format('embedded-opentype'),url('./webfonts/Proba-Pro-Light.woff2') format('woff2'),url('./webfonts/Proba-Pro-Light.woff') format('woff'),url('./webfonts/Proba-Pro-Light.ttf') format('truetype');
+    src: url('/webfonts/Proba-Pro-Light.eot');
+    src: url('/webfonts/Proba-Pro-Light.eot?#iefix') format('embedded-opentype'),url('/webfonts/Proba-Pro-Light.woff2') format('woff2'),url('/webfonts/Proba-Pro-Light.woff') format('woff'),url('/webfonts/Proba-Pro-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'ProbaPro-Regular';
-    src: url('./webfonts/Proba-Pro-Regular.eot');
-    src: url('./webfonts/Proba-Pro-Regular.eot?#iefix') format('embedded-opentype'),url('./webfonts/Proba-Pro-Regular.woff2') format('woff2'),url('./webfonts/Proba-Pro-Regular.woff') format('woff'),url('./webfonts/Proba-Pro-Regular.ttf') format('truetype');
+    src: url('/webfonts/Proba-Pro-Regular.eot');
+    src: url('/webfonts/Proba-Pro-Regular.eot?#iefix') format('embedded-opentype'),url('/webfonts/Proba-Pro-Regular.woff2') format('woff2'),url('/webfonts/Proba-Pro-Regular.woff') format('woff'),url('/webfonts/Proba-Pro-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'ProbaPro-Semibold';
-    src: url('./webfonts/Proba-Pro-Semibold.eot');
-    src: url('./webfonts/Proba-Pro-Semibold.eot?#iefix') format('embedded-opentype'),url('./webfonts/Proba-Pro-Semibold.woff2') format('woff2'),url('./webfonts/Proba-Pro-Semibold.woff') format('woff'),url('./webfonts/Proba-Pro-Semibold.ttf') format('truetype');
+    src: url('/webfonts/Proba-Pro-Semibold.eot');
+    src: url('/webfonts/Proba-Pro-Semibold.eot?#iefix') format('embedded-opentype'),url('/webfonts/Proba-Pro-Semibold.woff2') format('woff2'),url('/webfonts/Proba-Pro-Semibold.woff') format('woff'),url('/webfonts/Proba-Pro-Semibold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'ProbaPro-Bold';
-    src: url('./webfonts/Proba-Pro-Bold.eot');
-    src: url('./webfonts/Proba-Pro-Bold.eot?#iefix') format('embedded-opentype'),url('./webfonts/Proba-Pro-Bold.woff2') format('woff2'),url('./webfonts/Proba-Pro-Bold.woff') format('woff'),url('./webfonts/Proba-Pro-Bold.ttf') format('truetype');
+    src: url('/webfonts/Proba-Pro-Bold.eot');
+    src: url('/webfonts/Proba-Pro-Bold.eot?#iefix') format('embedded-opentype'),url('/webfonts/Proba-Pro-Bold.woff2') format('woff2'),url('/webfonts/Proba-Pro-Bold.woff') format('woff'),url('/webfonts/Proba-Pro-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'NoeDisplay-Regular';
-  src: url("./webfonts/Noe-Display-Regular.eot");
-  src: url("./webfonts/Noe-Display-Regular.eot?#iefix") format("embedded-opentype"), url("./webfonts/Noe-Display-Regular.woff") format("woff");
+  src: url("/webfonts/Noe-Display-Regular.eot");
+  src: url("/webfonts/Noe-Display-Regular.eot?#iefix") format("embedded-opentype"), url("/webfonts/Noe-Display-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'NoeDisplay-Bold';
-  src: url("./webfonts/Noe-Display-Bold.eot");
-  src: url("./webfonts/Noe-Display-Bold.eot?#iefix") format("embedded-opentype"), url("./webfonts/Noe-Display-Bold.woff") format("woff");
+  src: url("/webfonts/Noe-Display-Bold.eot");
+  src: url("/webfonts/Noe-Display-Bold.eot?#iefix") format("embedded-opentype"), url("/webfonts/Noe-Display-Bold.woff") format("woff");
 }

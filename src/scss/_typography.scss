@@ -31,10 +31,31 @@ $serif-stack: 'Times New Roman', Times, Georgia, serif;
     font-weight: normal;
 }
 
+@mixin headline {
+    @include serif-bold;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    @include md {
+        font-size: 30px;
+    }
+    @include lg {
+        font-size: 36px;
+    }
+}
+
 @mixin body-copy {
     font-size: 18px;
     line-height: 1.44;
     margin-bottom: 10px;
+    a {
+        text-decoration: none;
+        color: $text-gray;
+        transition: color $timing linear;
+        &:hover {
+            color: $orange;
+        }
+    }
 }
 
 @mixin quote {

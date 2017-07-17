@@ -25,16 +25,7 @@
 }
 
 .project__head {
-    @include serif-bold;
-    font-size: 32px;
-    line-height: 1.2;
-    margin-bottom: 6px;
-    @include md {
-        font-size: 30px;
-    }
-    @include lg {
-        font-size: 36px;
-    }
+    @include headline;
 }
 
 .project__copy {

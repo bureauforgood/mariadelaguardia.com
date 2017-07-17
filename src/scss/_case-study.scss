@@ -1,19 +1,65 @@
 .casestudy {
+    display: block;
+}
 
+.casestudy__image {
+    line-height: 0;
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.casestudy__wrapper {
+    @include wrapper;
+    max-width: 840px;
+    padding: 40px 20px;
+    @include md {
+        padding: 100px 20px;
+    }
 }
 
 .casestudy__head {
-
+    @include headline;
 }
 
 .casestudy__body {
-    @include body-copy;
+    margin-bottom: 30px;
+    p {
+        @include body-copy;
+    }
 }
 
 .casestudy__quote {
     @include quote;
+    margin-bottom: 15px;
+    @include lg {
+        font-size: 30px;
+    }
 }
 
 .casestudy__citation {
     @include citation;
+}
+
+.casestudy__eyebrow {
+    @include sans-bold;
+    color: $link-gray;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 1.42px;
+    margin-bottom: 20px;
+}
+
+.casestudy__next-link {
+    color: $blue;
+    &:after {
+        content: "";
+        width: 13px;
+        height: 11px;
+        display: inline-block;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12.58 10.5' fill='#{$blue}' stroke='none'><polygon points='6.49 9.6 7.38 10.5 12.58 5.25 7.38 0 6.49 0.9 10.16 4.61 0 4.61 0 5.9 10.16 5.9 6.49 9.6'/></svg>");
+        background-repeat: no-repeat;
+    }
 }

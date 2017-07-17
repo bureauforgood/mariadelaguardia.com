@@ -32,6 +32,10 @@
     font-size: 10px;
     color: $text-black;
     margin: 0;
+    transition: color $timing linear;
+    &:hover {
+        color: $orange;
+    }
     @include md {
         display: inline-block;
     }
