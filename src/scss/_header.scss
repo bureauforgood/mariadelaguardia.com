@@ -22,6 +22,12 @@
     @include serif-bold;
     font-size: 17px;
     margin-bottom: 6px;
+    color: $text-black;
+    text-decoration: none;
+    transition: color $timing linear;
+    &:hover {
+        color: $orange;
+    }
     @include md {
         display: inline-block;
         margin-right: 36px;
