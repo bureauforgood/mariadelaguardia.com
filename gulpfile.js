@@ -90,3 +90,9 @@ gulp.task('default', function() {
   gulp.watch(source+'img/**/*', ['copy']);
 
 });
+
+gulp.task('build', function() {
+
+  gulp.start('styles', 'pug', 'copy');
+
+});
