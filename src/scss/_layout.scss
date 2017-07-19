@@ -12,6 +12,10 @@ body {
     color: $text-black;
 }
 
+main {
+    overflow: hidden;
+}
+
 section {
     display: flex;
     flex-direction: column;
