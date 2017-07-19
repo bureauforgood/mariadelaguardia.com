@@ -1,7 +1,8 @@
 .site-header {
-    position: absolute;
+    position: fixed;
+    overflow: visible;
     padding: 35px 20px 0;
-    z-index: 1;
+    z-index: 100;
     width: calc( 100% - 20px ); // account for the page border
     @include md {
         padding: 35px 50px 0;
@@ -49,28 +50,12 @@
     }
 }
 
-.social-links {
-    display: none;
-    @include md {
-        display: block;
-        position: absolute;
-        top: 70px;
-        left: calc( 100% - 25px );
-        transform: rotate(90deg);
-        transform-origin: 0 0;
-        z-index: 1;
-    }
-    @include lg {
-        left: calc( 100% - 50px );
-    }
-}
-
 .navigation-links {
     display: none;
     @include md {
         display: block;
         position: absolute;
-        bottom: -50px;
+        top: calc( 100vh - 70px );
         left: 15px;
         transform: rotate(-90deg);
         transform-origin: 0 0;
@@ -78,5 +63,21 @@
     }
     @include lg {
         left: 40px;
+    }
+}
+
+.social-links {
+    display: none;
+    @include md {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: calc( 100vw - 25px );
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+        z-index: 1;
+    }
+    @include lg {
+        left: calc( 100vw - 50px );
     }
 }

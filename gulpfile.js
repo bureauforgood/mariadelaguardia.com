@@ -59,7 +59,7 @@ gulp.task('scripts', function() {
 
 // Compile Pug
 gulp.task('pug',function() {
-    return gulp.src(source+'views/*.pug')
+    return gulp.src(source+'views/**/*.pug')
     .pipe(pug({
         doctype: 'html',
         basedir: source,
@@ -100,6 +100,7 @@ gulp.task('default', function() {
 
     // Watch pug files
     gulp.watch(source+'views/**/*.pug', ['pug']);
+    gulp.watch(source+'includes/**/*.pug', ['pug']);
 
     // Watch images directory
     gulp.watch(source+'img/**/*', ['copy']);

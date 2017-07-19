@@ -1,16 +1,13 @@
 doctype html
 html(language='en')
-	include /_includes/_html-header.pug
+	include /includes/html-header.pug
 
 	body.home
-		include /_includes/_site-header.pug
+		- var home = true
+		include /includes/site-header.pug
 
 		main
 			section.hero.decorated
-
-				nav.navigation-links
-					a.link.link--nav.js-link--nav(href='#about') About Me
-					a.link.link--nav.js-link--nav(href='#organizations') Organizations I've Served
 
 				.hero__wrapper
 					.hero__info
@@ -110,5 +107,5 @@ html(language='en')
 					.project__image
 						img(src="/img/pir-fpo.jpg")
 
-		include /_includes/_site-footer.pug
-		include /_includes/_html-footer.pug
+		include /includes/site-footer.pug
+		include /includes/html-footer.pug
