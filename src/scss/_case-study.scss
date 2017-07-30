@@ -23,6 +23,11 @@
     @include headline;
 }
 
+.casestudy__subhead {
+    @include subheadline;
+}
+
+
 .casestudy__body {
     margin-bottom: 30px;
     p {

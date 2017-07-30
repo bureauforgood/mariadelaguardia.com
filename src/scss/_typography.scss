@@ -44,6 +44,19 @@ $serif-stack: 'Times New Roman', Times, Georgia, serif;
     }
 }
 
+@mixin subheadline {
+    @include serif-bold;
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    @include md {
+        font-size: 25px;
+    }
+    @include lg {
+        font-size: 30px;
+    }
+}
+
 @mixin body-copy {
     font-size: 18px;
     line-height: 1.44;
