@@ -40,9 +40,9 @@ gulp.task('styles', function() {
     return gulp.src([
         source+'scss/style.scss'
     ])
-    .pipe(sass()
+    .pipe(sass({includePaths: ['node_modules']}))
         .on('error', handleError)
-        .on('error', notify.onError()))
+        .on('error', notify.onError())
     .pipe(autoprefixer())
     .pipe(gulp.dest(dist+'css/'))
     .pipe(browserSync.stream());

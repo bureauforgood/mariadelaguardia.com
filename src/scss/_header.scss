@@ -3,7 +3,6 @@
     overflow: visible;
     padding: 35px 20px 0;
     z-index: 100;
-    width: calc( 100% - 20px ); // account for the page border
     @include md {
         padding: 35px 50px 0;
     }
@@ -59,7 +58,6 @@
         left: 15px;
         transform: rotate(-90deg);
         transform-origin: 0 0;
-        z-index: 10;
     }
     @include lg {
         left: 40px;
@@ -75,7 +73,6 @@
         left: calc( 100vw - 25px );
         transform: rotate(90deg);
         transform-origin: 0 0;
-        z-index: 1;
     }
     @include lg {
         left: calc( 100vw - 50px );
