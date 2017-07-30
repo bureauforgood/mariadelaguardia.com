@@ -7,9 +7,21 @@ html {
 }
 
 body {
-    border: 10px solid $peach-dark;
     @include sans-reg;
     color: $text-black;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc( 100% - 20px );
+        height: calc( 100% - 20px );
+        top: 0;
+        left: 0;
+        border: 10px solid $site-border;
+        z-index: 1;
+        mix-blend-mode: multiply;
+        opacity: 0.25;
+    }
 }
 
 main {
