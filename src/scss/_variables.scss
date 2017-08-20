@@ -26,6 +26,9 @@ $yellow-overlay: #FFE8E0;
 
 $site-border: #A85530;
 
+$box-yellow: #F4F2D5;
+$box-blue: #DBEDF9;
+
 //GLOBAL SETTINGS
 
 @mixin wrapper {
@@ -36,11 +39,11 @@ $site-border: #A85530;
 }
 
 @mixin section-padding() {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     @include md {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 $timing: 0.15s;

@@ -22,6 +22,9 @@
 
 .project__info {
     order: 2;
+    @include md {
+        width: 50%;
+    }
 }
 
 .project__head {
@@ -56,23 +59,26 @@
         z-index: -1;
         mix-blend-mode: multiply;
     }
-    @include md {
-        img {
-            width: 440px;
-        }
-    }
-    @include lg {
-        img {
-            width: 640px;
-        }
-    }
     .project--composed-image & {
         box-shadow: none;
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+    @include md {
+        width: 50%;
     }
 }
 
 // LEFT/RIGHT LAYOUTS
 .project--layout-a {
+    .project__info {
+        @include md {
+            padding-left: 50px;
+            padding-right: 0;
+        }
+    }
     .project__image {
         top: -125px;
         left: -40px;
@@ -104,7 +110,9 @@
 .project--layout-b {
     .project__info {
         @include md {
-           order: 1;
+            order: 1;
+            padding-right: 50px;
+            padding-left: 0;
         }
     }
     .project__image {
@@ -137,6 +145,12 @@
 }
 
 .project--layout-c {
+    .project__info {
+        @include md {
+            padding-left: 50px;
+            padding-right: 0;
+        }
+    }
     @include md {
         padding-bottom: 0;
         &.project--last {

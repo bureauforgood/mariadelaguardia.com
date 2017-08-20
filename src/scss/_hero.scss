@@ -1,30 +1,25 @@
 .hero {
     background: $peach;
     justify-content: center;
-    padding: 210px 20px 300px;
+    padding: 210px 30px 300px;
     z-index: 1;
     @include md {
-        padding: 100px 50px;
+        padding: 140px 60px;
         &:before {
             content: "";
             display: block;
             width: 240px;
             height: 450px;
-            background-color: rgba($light-yellow,0.5);
-            //background-color: $light-yellow;
+            background-color: $box-yellow;
             position: absolute;
             bottom: 0;
             right: 0;
-            mix-blend-mode: multiply;
         }
     }
     @include lg {
-        padding-left: 90px;
-        padding-right: 90px;
         &:before {
             width: 600px;
             height: 500px;
-            bottom: -50px;
             right: -100px;
         }
     }
