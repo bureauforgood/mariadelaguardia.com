@@ -8,19 +8,12 @@
         &:before {
             content: "";
             display: block;
-            width: 240px;
+            width: 290px;
             height: 450px;
             background-color: $box-yellow;
             position: absolute;
             bottom: 0;
             right: 0;
-        }
-    }
-    @include lg {
-        &:before {
-            width: 600px;
-            height: 500px;
-            right: -100px;
         }
     }
 }
@@ -67,11 +60,11 @@
     @include md {
         display: block;
         position: relative;
-        max-width: 240px;
+        max-width: 284px;
         box-shadow: 0 0 60px rgba(0,0,0,0.3);
         border-radius: 50px;
     }
     @include lg {
-        max-width: 284px;
+        right: 8%;
     }
 }
