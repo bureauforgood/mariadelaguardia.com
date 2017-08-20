@@ -22,12 +22,18 @@ This will compile the application and launch a browsersync session.
 
 Changes to the site will be accomplished by directly editing the Pug and SCSS files and committing them to the repo. This will trigger a Netlify deploy to the production environment.
 
-### Homepage Layout Classes
+### Homepage Layout
 The homepage is coded to be presented in the following way:
-Hero
-2 Projects
-Organizations
-2 Projects
-About Me
-4 Projects (or multiple groups of 4 Projects)
+
+Hero  
+2 Projects  
+Organizations  
+2 Projects  
+About Me  
+4 Projects (or multiple groups of 4 Projects)  
 Footer
+
+#### Classes
+`.project` - main project class  
+`.project--layout-image-left`  
+`.project--layout-image-right`
