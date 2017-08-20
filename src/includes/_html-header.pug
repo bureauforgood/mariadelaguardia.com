@@ -3,7 +3,13 @@ head
 	meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
 	meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
-	title Maria De La Guardia
+	title #{siteName} | #{meta.pageTitle}
+	meta(content=meta.pageTitle, property='og:title')
+	meta(content=siteName, property='og:site_name')
+	meta(content=meta.description, property='og:description')
+	meta(content=meta.image, property='og:image')
+	meta(content=canonicalUrl, property='og:url')
+	link(rel='canonical', href=canonicalUrl)
 
 	// Disable tap highlight on IE
 	meta(name='msapplication-tap-highlight', content='no')

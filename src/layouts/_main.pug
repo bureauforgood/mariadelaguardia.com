@@ -1,0 +1,34 @@
+block globalsVars
+	-
+		const siteName = 'Maria De La Guardia';
+		const siteUrl = 'https://www.mariadelaguardia.com';
+		const themeColor = '#FBF2EE';
+		const dribbleUrl = 'https://dribbble.com/MariaDeLaGuardia';
+		const behanceUrl = 'https://www.behance.net/mariadelaguar';
+		const contactEmail = 'me@mariadelaguardia.com';
+		const contactPhone = '347 228 1219';
+
+block canonicalUrl
+	- const canonicalUrl = siteUrl;
+
+block metaVars
+	-
+		const meta = {
+			pageTitle: 'Interactive Art Director',
+			description: 'I’m an interactive art director focused on nonprofits, foundations and news & editorial sites.',
+			image: ''
+		};
+
+block bodyClass
+	- const bodyClass = ''
+
+doctype html
+html(language='en')
+	include /includes/_html-header.pug
+
+	body(class='animsition ' + bodyClass)
+		include /includes/_site-header.pug
+		main
+			block content
+	include /includes/_site-footer.pug
+	include /includes/_html-footer.pug

@@ -18,6 +18,14 @@ Clone the repo
 
 `gulp` - this will compile the application and launch a browsersync session
 
+## Content Editing
+### Global Layout
+`/src/layouts/_main.pug`
+### Global Elements
+`/src/includes/*.pug`
+### Page Level
+`/src/views/*.pug`
+
 ## Markup and CSS Documentation
 
 Changes to the site will be accomplished by directly editing the Pug and SCSS files and committing them to the repo. This will trigger a Netlify deploy to the production environment.

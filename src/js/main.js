@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
         linkElement: '.animsition-link',
         // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
         loading: true,
-        loadingParentElement: 'body', //animsition wrapper element
+        loadingParentElement: 'html', //animsition wrapper element
         loadingClass: 'animsition-loading',
         // loadingInner: '', // e.g '<img src="loading.svg" />'
         // timeout: false,
