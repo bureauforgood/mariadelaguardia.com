@@ -5,7 +5,7 @@
     @include md {
         padding-top: 160px;
         padding-bottom: 160px;
-        width: 95%;
+        width: calc(100% - 60px);
         float: right;
     }
 }
