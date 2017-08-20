@@ -63,11 +63,8 @@
         display: block;
         position: absolute;
         top: 70px;
-        left: calc( 100vw - 25px );
+        left: calc( 100vw - 21px );
         transform: rotate(90deg);
         transform-origin: 0 0;
-    }
-    @include lg {
-        left: calc( 100vw - 50px );
     }
 }

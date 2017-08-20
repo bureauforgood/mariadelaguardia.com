@@ -8,34 +8,35 @@ html(language='en')
 
 		main
 			section.hero.decorated
-
 				.hero__wrapper
 					.hero__info
 						h1.hero__head I’m an interactive art director focused on #[span.hero__head--strong nonprofits], #[span.hero__head--strong foundations] and #[span.hero__head--strong news & editorial sites].
 						h2.hero__subhead My work includes web, print & identity design, information architecture & illustration.
 					img.hero__image(src="/img/iphone-fpo.png")
 
-			section.project.project--layout-a.project--teal.decorated
+			section.project.project--layout-image-left.project--teal.decorated
 				.project__wrapper
 					.project__info
-						h1.project__head UWUA Minisite
+						h1.project__head Project 1A
 						p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 						a.link.link--arrow.animsition-link(href="case-study.html") Case Study
 						blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 						cite.project__citation Kevin Kreshmer, Mood & Method
 					.project__image
-						img(src="/img/uwua-fpo.jpg")
+						img.project__image--single(src="/img/uwua-fpo.jpg")
 
-			section.project.project--layout-b.project--blue.project--last
+			section.project.project--layout-image-right.project--blue.project--last.project--composed-image
 				.project__wrapper
 					.project__info
-						h1.project__head Sikh Coalition
+						h1.project__head Project 1B
 						p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 						a.link.link--arrow(href="case-study.html") Case Study
 						blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 						cite.project__citation Matt Schwartz, Constructive
 					.project__image
-						img(src="/img/uwua-fpo.jpg")
+						img.project__image--single(src="/img/phi-fpo.png")
+					.project__image--alt
+						img(src="/img/sikh-alt-fpo.jpg")
 
 			section#organizations.orgs.decorated
 				.orgs__wrapper
@@ -52,27 +53,27 @@ html(language='en')
 						a.orgs__link(href="#"): img.orgs__logo(src="//via.placeholder.com/150x40")
 						a.orgs__link(href="#"): img.orgs__logo(src="//via.placeholder.com/150x40")
 
-			section.project.project--layout-a.project--teal.project--composed-image
+			section.project.project--layout-image-left.project--teal.project--composed-image
 				.project__wrapper
 					.project__info
-						h1.project__head PHI
+						h1.project__head Project 2A
 						p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 						a.link.link--arrow.animsition-link(href="case-study.html") Case Study
 						blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 						cite.project__citation Kevin Kreshmer, Mood & Method
 					.project__image
-						img(src="/img/phi-fpo.png")
+						img.project__image--single(src="/img/phi-fpo.png")
 
-			section.project.project--layout-b.project--blue.project--last.decorated
+			section.project.project--layout-image-right.project--blue.project--last.decorated
 				.project__wrapper
 					.project__info
-						h1.project__head Sikh Coalition
+						h1.project__head Project 2B
 						p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 						a.link.link--arrow.animsition-link(href="case-study.html") Case Study
 						blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 						cite.project__citation Matt Schwartz, Constructive
 					.project__image
-						img(src="/img/uwua-fpo.jpg")
+						img.project__image--single(src="/img/uwua-fpo.jpg")
 
 			section#about.about
 				.about__wrapper
@@ -94,18 +95,50 @@ html(language='en')
 							li.about__list-item Web development  #[small.about__list-item--small in collaboration with my development partners]
 							li.about__list-item Interactive project management
 					.about__img.about__img--second
-						img(src="/img/maria-fpo.jpg")
+						img.project__image--single(src="/img/maria-fpo.jpg")
 
-			section.project.project--layout-c.project--yellow.project--last.decorated.project--composed-image
+			section.project.project--layout-image-left.project--yellow.project--last.decorated.project--composed-image
 				.project__wrapper
 					.project__info
-						h1.project__head Public Interest Registry Media Kit
+						h1.project__head Project Group of 4: A
 						p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 						a.link.link--arrow.animsition-link(href="case-study.html") Case Study
 						blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
 						cite.project__citation Megan Soffer, PIR
 					.project__image
-						img(src="/img/pir-fpo.jpg")
+						img.project__image--single(src="/img/pir-fpo.jpg")
 
+			section.project.project--layout-image-right.project--yellow.project--last.decorated.project--composed-image
+				.project__wrapper
+					.project__info
+						h1.project__head Project Group of 4: B
+						p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+						a.link.link--arrow.animsition-link(href="case-study.html") Case Study
+						blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
+						cite.project__citation Megan Soffer, PIR
+					.project__image
+						img.project__image--single(src="/img/pir-fpo.jpg")
+
+			section.project.project--layout-image-left.project--yellow.project--last.decorated.project--composed-image
+				.project__wrapper
+					.project__info
+						h1.project__head Project Group of 4: C
+						p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+						a.link.link--arrow.animsition-link(href="case-study.html") Case Study
+						blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
+						cite.project__citation Megan Soffer, PIR
+					.project__image
+						img.project__image--single(src="/img/pir-fpo.jpg")
+
+			section.project.project--layout-image-right.project--yellow.project--last.decorated.project--composed-image
+				.project__wrapper
+					.project__info
+						h1.project__head Project Group of 4: D
+						p.project__copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+						a.link.link--arrow.animsition-link(href="case-study.html") Case Study
+						blockquote.project__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
+						cite.project__citation Megan Soffer, PIR
+					.project__image
+						img.project__image--single(src="/img/pir-fpo.jpg")
 		include /includes/site-footer.pug
 		include /includes/html-footer.pug
