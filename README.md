@@ -40,8 +40,15 @@ Footer
 `.project--layout-image-right` - project layout with image(s) on the right side
 
 ##### Image Classes
-`.project__image--single` - used when there is one main image for a project 
-`.project__image--multiple` - used for each image in a four image grouping for a project - the images are sized and positioned based on their order in the markup   
+`.project__image--single` - used when there is one main image for a project
+
+`.project__image--multiple` - used for each image in a four-image grouping for a project.  
+The images are sized and positioned based on their order in the markup:  
+1. First image: large, left  
+2. Second image: large, right  
+3. Third image: small, left  
+4. Fourth image: small, right
+ 
 `.project__image--alt` - used for projects that display a second image opposite the main project image
 
 ##### Color Classes

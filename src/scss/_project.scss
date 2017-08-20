@@ -45,7 +45,6 @@
     position: relative;
     display: block;
     z-index: 1;
-    box-shadow: 0 0 60px rgba(0,0,0,0.5);
     line-height: 0;
     &:after {
         content: "";
@@ -55,12 +54,13 @@
         position: absolute;
         z-index: -1;
     }
-    .project--composed-image & {
-        box-shadow: none;
-    }
     .project__image--single {
         width: 100%;
         max-width: 100%;
+        box-shadow: 0 0 60px rgba(0,0,0,0.5);
+        .project--composed-image & {
+            box-shadow: none;
+        }
     }
     @include md {
         width: 50%;
@@ -122,25 +122,17 @@
         right: -30px;
         margin-bottom: calc( -125px + 40px );
         &:after {
-            bottom: -20px;
+            top: 0;
             left: -30px;
         }
         @include md {
             order: 2;
-            top: -60px;
+            top: -40px;
             right: -100px;
             margin-bottom: 0;
             &:after {
-                bottom: -30px;
+                top: 40px;
                 left: -40px;
-            }
-        }
-        @include lg {
-            top: -60px;
-            right: -100px;
-            &:after {
-                bottom: -40px;
-                left: -50px;
             }
         }
     }
