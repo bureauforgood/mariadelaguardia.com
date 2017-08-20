@@ -19,12 +19,27 @@ Clone the repo
 `gulp` - this will compile the application and launch a browsersync session
 
 ## Content Editing
-### Global Layout
-`/src/layouts/_main.pug`
+### Global Variables & Layout
+`/src/layouts/_main.pug`  
+* Set site variables  
+* Set default meta  
+* Set default canonical url  
+* Global layout template 
+
 ### Global Elements
-`/src/includes/*.pug`
+`/src/includes/*.pug`  
+* HTML Header  
+* Tracking Codes  
+* Site Header  
+* Site Footer  
+* HTML Footer  
+
 ### Page Level
-`/src/views/*.pug`
+`/src/views/*.pug`  
+* Add body classes  
+* Override meta  
+* Override caonoical URL  
+* Page content editing  
 
 ## Markup and CSS Documentation
 
