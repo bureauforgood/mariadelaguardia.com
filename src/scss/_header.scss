@@ -3,6 +3,7 @@
     overflow: visible;
     padding: 35px 20px 0;
     z-index: 100;
+    width: 100%;
     @include md {
         padding: 35px 50px 0;
     }
@@ -12,10 +13,8 @@
 }
 
 .site-header__wrapper {
-    @include md {
-        position: relative;
-        @include wrapper;
-    }
+    position: relative;
+    @include wrapper;
 }
 
 .site-header__head {
