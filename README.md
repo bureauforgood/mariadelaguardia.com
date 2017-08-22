@@ -14,11 +14,15 @@ Clone the repo
 
 `cd` in to the project directory
 
-`npm install` - this will download the project's dependancies
+`npm install` : installs the project's dependencies
 
-`gulp` - this will compile the application and launch a browsersync session
+`gulp` : compiles the application and launch a browsersync session
+
+`gulp build` : compiles the application into the /dist/ directory
 
 ## Content Editing
+Changes to the site content is accomplished by directly editing the Pug source files and pushing them to the repo. This will trigger a Netlify deploy to the production environment.
+
 ### Global Variables & Layout
 `/src/layouts/_main.pug`  
 * Set site variables  
@@ -43,7 +47,7 @@ Clone the repo
 
 ## Markup and CSS Documentation
 
-Changes to the site will be accomplished by directly editing the Pug and SCSS files and committing them to the repo. This will trigger a Netlify deploy to the production environment.
+Changes to the site styles is accomplished by directly editing the source SCSS files and pushing them to the repo. This will trigger a Netlify deploy to the production environment.
 
 ### Homepage Layout
 The homepage is coded to be presented in the following way:
