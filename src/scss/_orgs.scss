@@ -2,6 +2,7 @@
     background-color: $peach-bg;
     text-align: center;
     padding: 80px 30px 200px;
+    @include decorated;
     @include md {
         padding-top: 160px;
         padding-bottom: 160px;

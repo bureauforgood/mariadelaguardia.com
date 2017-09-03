@@ -1,10 +1,7 @@
+// Global Project Styles
 .project {
     @include section-padding;
-    padding-bottom: 200px;
     position: relative;
-    @include md {
-        padding-bottom: 80px;
-    }
 }
 
 .project__wrapper {
@@ -43,6 +40,7 @@
     @include citation;
 }
 
+// Image Variations
 .project__image {
     order: 1;
     position: relative;
@@ -67,9 +65,12 @@
         width: 100%;
         max-width: 100%;
         box-shadow: 0 0 60px rgba(0,0,0,0.5);
-        .project--composed-image & {
-            box-shadow: none;
-        }
+    }
+}
+
+@mixin project--composed-image {
+    img {
+        box-shadow: none;
     }
 }
 
@@ -88,6 +89,9 @@
         @include md {
             width: 260px;
         }
+        @include lg {
+            width: 390px;
+        }
     }
     img:nth-child(2) {
         top: 60px;
@@ -95,6 +99,10 @@
         @include md {
             top: 70px;
             left: 158px;
+        }
+        @include lg {
+            top: 120px;
+            left: 240px;
         }
     }
     img:nth-child(3),
@@ -105,17 +113,27 @@
             width: 90px;
             top: 215px;
         }
+        @include lg {
+            width: 140px;
+            top: 325px;
+        }
     }
     img:nth-child(3) {
         left: 25px;
         @include md {
             left: 35px;
         }
+        @include lg {
+            left: 45px;
+        }
     }
     img:nth-child(4) {
         left: 110px;
         @include md {
             left: 145px;
+        }
+        @include lg {
+            left: 210px;
         }
     }
 }
@@ -137,8 +155,8 @@
     }
 }
 
-// LEFT/RIGHT LAYOUTS
-.project--layout-image-left {
+// Layout Variations
+@mixin project--layout-image-left {
     .project__info {
         @include md {
             padding-left: 50px;
@@ -148,24 +166,22 @@
     .project__image {
         top: -125px;
         left: -40px;
-        margin-bottom: calc( -125px + 30px );
         &:after {
             top: -20px;
             right: -26px;
         }
         @include md {
-            top: -20px;
+            top: -40px;
             left: -100px;
-            margin-bottom: 0;
             &:after {
-                top: -26px;
-                right: -34px;
+                top: -36px;
+                right: -48px;
             }
         }
     }
 }
 
-.project--layout-image-right {
+@mixin project--layout-image-right {
     .project__info {
         @include md {
             order: 1;
@@ -176,7 +192,6 @@
     .project__image {
         top: -125px;
         right: -30px;
-        margin-bottom: calc( -125px + 40px );
         &:after {
             top: 0;
             left: -30px;
@@ -185,7 +200,6 @@
             order: 2;
             top: -40px;
             right: -100px;
-            margin-bottom: 0;
             &:after {
                 top: 40px;
                 left: -40px;
@@ -194,8 +208,8 @@
     }
 }
 
-// COLOR SCHEMES
-.project--teal {
+// Color Variations
+@mixin project--teal {
     background-color: $teal-bg;
     .project__image {
         &:after {
@@ -209,12 +223,12 @@
     &.project--layout-image-left {
         @include md {
             background-color: transparent;
-            background-image: linear-gradient(to right, $white, $white 20%, $light-teal 20%, $light-teal);
+            background-image: linear-gradient(to right, $white, $white 20%, $teal-bg 20%, $teal-bg);
         }
     }
 }
 
-.project--blue {
+@mixin project--blue {
     background-color: $white;
     .project__image {
         &:after {
@@ -227,8 +241,8 @@
     }
 }
 
-.project--yellow {
-    background-color: $light-yellow;
+@mixin project--yellow {
+    background-color: $yellow-bg;
     .project__image {
         &:after {
             background-color: $box-yellow;
@@ -241,7 +255,52 @@
     &.project--layout-image-left {
         @include md {
             background-color: transparent;
-            background-image: linear-gradient(to right, $white, $white 20%, $light-yellow 20%, $light-yellow);
+            background-image: linear-gradient(to right, $white, $white 20%, $yellow-bg 20%, $yellow-bg);
         }
     }
+}
+
+// Homepage Layout Settings
+.project--1a {
+    @include project--layout-image-left;
+    @include project--teal;
+    @include decorated;
+}
+.project--1b {
+    @include project--layout-image-right;
+    @include project--blue;
+}
+.project--2a {
+    @include project--layout-image-left;
+    @include project--teal;
+    @include project--composed-image;
+}
+.project--2b {
+    @include project--layout-image-right;
+    @include project--blue;
+    @include decorated;
+}
+.project--1of4 {
+    @include project--layout-image-left;
+    @include project--teal;
+    @include decorated;
+    @include project--composed-image;
+}
+.project--2of4 {
+    @include project--layout-image-right;
+    @include project--blue;
+    @include decorated;
+    @include project--composed-image;
+}
+.project--3of4 {
+    @include project--layout-image-left;
+    @include project--yellow;
+    @include decorated;
+    @include project--composed-image;
+}
+.project--4of4 {
+    @include project--layout-image-right;
+    @include project--teal;
+    @include decorated;
+    @include project--composed-image;
 }

@@ -45,7 +45,7 @@ img {
     }
 }
 
-.decorated {
+@mixin decorated {
     @include md {
         &:after {
             content: "";
