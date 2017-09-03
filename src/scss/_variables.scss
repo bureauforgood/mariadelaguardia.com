@@ -5,29 +5,29 @@ $text-black: #353535;
 $text-gray: #999;
 $link-gray: #8b8b8b;
 
-$peach: #FBF2EE;
-$peach-dark: #F1E3DD;
+$peach: rgba(234,191,167,1);
+$peach-bg: rgba(234,191,167,0.25);
 
-$light-purple: #E8E6EB;
-$mustard: #F5F0D9;
 
 $orange: #EE5D2F;
 $dark-orange: #E6926C;
 
 $teal: #057664;
+$teal-bg: rgba(88,162,99,0.25);
 $light-teal: #DEF1E1;
-$teal-overlay: rgba(0,0,0,0.05);
+
+$purple-bg: rgba(181,170,198,0.25);
 
 $blue: #1290F0;
-$blue-overlay: #DBEDF9;
 
 $light-yellow: #F5F0D9;
-$yellow-overlay: #FFE8E0;
 
-$site-border: #A85530;
+$site-border: rgba(234,191,167,0.25);
 
-$box-yellow: #F4F2D5;
-$box-blue: #DBEDF9;
+$box-yellow: rgba(197,192,104,0.25);
+$box-teal: rgba(76,133,117,0.25);
+$box-blue: rgba(81,143,190,0.25);
+$box-orange: rgba(230,129,96,0.25);
 
 //GLOBAL SETTINGS
 

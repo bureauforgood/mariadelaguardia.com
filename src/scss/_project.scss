@@ -196,10 +196,10 @@
 
 // COLOR SCHEMES
 .project--teal {
-    background-color: $light-teal;
+    background-color: $teal-bg;
     .project__image {
         &:after {
-            background-color: $teal-overlay;
+            background-color: $box-teal;
         }
     }
     .project__quote,
@@ -218,7 +218,7 @@
     background-color: $white;
     .project__image {
         &:after {
-            background-color: $blue-overlay;
+            background-color: $box-blue;
         }
     }
     .project__quote,
@@ -231,7 +231,7 @@
     background-color: $light-yellow;
     .project__image {
         &:after {
-            background-color: $yellow-overlay;
+            background-color: $box-yellow;
         }
     }
     .project__quote,
