@@ -68,10 +68,8 @@
     }
 }
 
-@mixin project--composed-image {
-    img {
-        box-shadow: none;
-    }
+.project--composed-image {
+    box-shadow: none;
 }
 
 .project__image--multiple {
@@ -260,6 +258,25 @@
     }
 }
 
+@mixin project--purple {
+    background-color: $purple-bg;
+    .project__image {
+        &:after {
+            background-color: $box-blue;
+        }
+    }
+    .project__quote,
+    .project__citation {
+        color: $blue;
+    }
+    &.project--layout-image-left {
+        @include md {
+            background-color: transparent;
+            background-image: linear-gradient(to right, $white, $white 20%, $purple-bg 20%, $purple-bg);
+        }
+    }
+}
+
 // Homepage Layout Settings
 .project--1a {
     @include project--layout-image-left;
@@ -272,35 +289,27 @@
 }
 .project--2a {
     @include project--layout-image-left;
-    @include project--teal;
-    @include project--composed-image;
+    @include project--yellow;
 }
 .project--2b {
     @include project--layout-image-right;
-    @include project--blue;
+    @include project--purple;
     @include decorated;
 }
 .project--1of4 {
     @include project--layout-image-left;
-    @include project--teal;
+    @include project--yellow;
     @include decorated;
-    @include project--composed-image;
 }
 .project--2of4 {
     @include project--layout-image-right;
     @include project--blue;
-    @include decorated;
-    @include project--composed-image;
 }
 .project--3of4 {
     @include project--layout-image-left;
     @include project--yellow;
-    @include decorated;
-    @include project--composed-image;
 }
 .project--4of4 {
     @include project--layout-image-right;
-    @include project--teal;
-    @include decorated;
-    @include project--composed-image;
+    @include project--purple;
 }
