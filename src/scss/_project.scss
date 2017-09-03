@@ -22,6 +22,9 @@
     @include md {
         width: 50%;
     }
+    @include lg {
+        width: 45.8333%;
+    }
 }
 
 .project__head {
