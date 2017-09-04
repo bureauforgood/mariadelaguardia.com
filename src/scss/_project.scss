@@ -174,7 +174,14 @@
         }
         @include md {
             left: -100px;
-            width: 100%;
+            width: 50%;
+            &:after {
+                top: -28px;
+                right: -38px;
+            }
+        }
+        @include lg {
+            left: -100px;
             &:after {
                 top: -36px;
                 right: -48px;
@@ -202,7 +209,7 @@
         @include md {
             order: 2;
             right: -100px;
-            width: 100%;
+            width: 50%;
             &:after {
                 top: 40px;
                 left: -40px;
@@ -223,11 +230,12 @@
     .project__citation {
         color: $teal;
     }
-    &.project--layout-image-left {
-        @include md {
-            background-color: transparent;
-            background-image: linear-gradient(to right, $white, $white 20%, $teal-bg 20%, $teal-bg);
-        }
+}
+
+@mixin project--teal--left {
+    @include md {
+        background-color: transparent;
+        background-image: linear-gradient(to right, $white, $white 25%, $teal-bg 25%, $teal-bg);
     }
 }
 
@@ -244,6 +252,29 @@
     }
 }
 
+@mixin project--blue-yellow {
+    background-color: $white;
+    .project__image {
+        &:after {
+            background-color: $box-blue;
+        }
+    }
+    .project__quote,
+    .project__citation {
+        color: $teal;
+    }
+    &:after {
+        content: "";
+        display: block;
+        height: 85%;
+        width: 25%;
+        background-color: $box-yellow;
+        position: absolute;
+        right: 0;
+        top: -40px;
+    }
+}
+
 @mixin project--yellow {
     background-color: $yellow-bg;
     .project__image {
@@ -255,11 +286,12 @@
     .project__citation {
         color: $teal;
     }
-    &.project--layout-image-left {
-        @include md {
-            background-color: transparent;
-            background-image: linear-gradient(to right, $white, $white 20%, $yellow-bg 20%, $yellow-bg);
-        }
+}
+
+@mixin project--yellow--left {
+    @include md {
+        background-color: transparent;
+        background-image: linear-gradient(to right, $white, $white 20%, $yellow-bg 20%, $yellow-bg);
     }
 }
 
@@ -274,11 +306,12 @@
     .project__citation {
         color: $blue;
     }
-    &.project--layout-image-left {
-        @include md {
-            background-color: transparent;
-            background-image: linear-gradient(to right, $white, $white 20%, $purple-bg 20%, $purple-bg);
-        }
+}
+
+@mixin project--purple--left {
+    @include md {
+        background-color: transparent;
+        background-image: linear-gradient(to right, $white, $white 20%, $purple-bg 20%, $purple-bg);
     }
 }
 
@@ -286,10 +319,16 @@
 .project--1a {
     @include project--layout-image-left;
     @include project--teal;
+    @include project--teal--left;
     @include decorated;
     padding-bottom: 100px;
     .project__image {
         margin-top: -125px;
+    }
+    @include md {
+        .project__image {
+            margin-top: -40px;
+        }
     }
 }
 .project--1b {
@@ -298,10 +337,21 @@
     .project__image {
         margin-top: -20px;
     }
+    @include md {
+        padding-bottom: 0;
+        margin-bottom: -60px;
+        .project__image {
+            margin-top: -40px;
+        }
+    }
 }
 .project--2a {
     @include project--layout-image-left;
-    @include project--blue;
+    @include project--blue-yellow;
+    @include md {
+        padding-bottom: 0;
+        margin-bottom: -20px;
+    }
     .project__image {
         margin-top: -30px;
         margin-bottom: 10px;
@@ -312,6 +362,12 @@
             right: auto;
             width: calc(100% - 20px);
             height: calc(100% - 40px);
+        }
+        @include md {
+            left: -60px;
+            &:after {
+                left: -60px;
+            }
         }
     }
 }
@@ -327,17 +383,29 @@
             top: 40px;
             height: calc(100% - 20px);
         }
+        @include md {
+            width: 50%;
+            right: -60px;
+            top: 60px;
+        }
     }
 }
 .project--1of4 {
     @include project--layout-image-left;
     @include project--yellow;
+    @include project--yellow--left;
     @include decorated;
     .project__image {
         margin-top: -30px;
         &:after {
             background-color: $box-orange;
             top: 30px;
+        }
+        @include md {
+            top: 60px;
+            &:after {
+                width: 75%;
+            }
         }
     }
 }
