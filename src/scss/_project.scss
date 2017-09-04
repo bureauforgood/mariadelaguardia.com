@@ -2,6 +2,7 @@
 .project {
     @include section-padding;
     position: relative;
+    padding-bottom: 80px;
 }
 
 .project__wrapper {
@@ -68,8 +69,10 @@
     }
 }
 
-.project--composed-image {
-    box-shadow: none;
+.project__image--precomposed {
+    img {
+        box-shadow: none;
+    }
 }
 
 .project__image--multiple {
@@ -162,15 +165,16 @@
         }
     }
     .project__image {
-        top: -125px;
-        left: -40px;
+        margin-bottom: 40px;
+        left: -55px;
+        width: 110%;
         &:after {
             top: -20px;
             right: -26px;
         }
         @include md {
-            top: -40px;
             left: -100px;
+            width: 100%;
             &:after {
                 top: -36px;
                 right: -48px;
@@ -188,16 +192,17 @@
         }
     }
     .project__image {
-        top: -125px;
-        right: -30px;
+        margin-bottom: 40px;
+        right: -20px;
+        width: 110%;
         &:after {
-            top: 0;
-            left: -30px;
+            top: 20px;
+            left: -20px;
         }
         @include md {
             order: 2;
-            top: -40px;
             right: -100px;
+            width: 100%;
             &:after {
                 top: 40px;
                 left: -40px;
@@ -282,34 +287,75 @@
     @include project--layout-image-left;
     @include project--teal;
     @include decorated;
+    padding-bottom: 100px;
+    .project__image {
+        margin-top: -125px;
+    }
 }
 .project--1b {
     @include project--layout-image-right;
     @include project--blue;
+    .project__image {
+        margin-top: -20px;
+    }
 }
 .project--2a {
     @include project--layout-image-left;
-    @include project--yellow;
+    @include project--blue;
+    .project__image {
+        margin-top: -30px;
+        margin-bottom: 10px;
+        left: -30px;
+        &:after {
+            top: 30px;
+            left: 0;
+            right: auto;
+            width: calc(100% - 20px);
+            height: calc(100% - 40px);
+        }
+    }
 }
 .project--2b {
     @include project--layout-image-right;
     @include project--purple;
     @include decorated;
+    .project__image {
+        margin-top: -10px;
+        right: -20px;
+        width: calc(100% + 10px);
+        &:after {
+            top: 40px;
+            height: calc(100% - 20px);
+        }
+    }
 }
 .project--1of4 {
     @include project--layout-image-left;
     @include project--yellow;
     @include decorated;
+    .project__image {
+        margin-top: -30px;
+        &:after {
+            background-color: $box-orange;
+            top: 30px;
+        }
+    }
 }
 .project--2of4 {
     @include project--layout-image-right;
     @include project--blue;
+    .project__image {
+        margin-top: -20px;
+    }
 }
 .project--3of4 {
     @include project--layout-image-left;
-    @include project--yellow;
+    @include project--blue;
 }
 .project--4of4 {
     @include project--layout-image-right;
     @include project--purple;
+    .project__image {
+        margin-top: -20px;
+    }
 }

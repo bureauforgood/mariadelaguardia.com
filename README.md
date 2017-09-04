@@ -75,6 +75,8 @@ The images are sized and positioned based on their order in the markup:
 2. Second image: large, right  
 3. Third image: small, left  
 4. Fourth image: small, right
+
+`.project__image--precomposed` - used to disable the image drop shadow in case the image is precomposed with its own shadows and background color  
  
 `.project__image--alt` - used for projects that display a second image opposite the main project image
 
@@ -84,7 +86,7 @@ The images are sized and positioned based on their order in the markup:
 `.project--yellow`
 
 ##### Other Classes
-`.project--composed-image` - used to disable the image drop shadow in case the image is precomposed with its own shadows  
+
 `.decorated` - class to indicate which element should be decorated with the vertical line in the center  
 `.animsition-link` - used on a link to trigger page-to-page transitions
 
