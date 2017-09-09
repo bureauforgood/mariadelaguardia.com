@@ -49,7 +49,7 @@
 
 .about__img--second {
     display: none;
-    @include lg {
+    @include xl {
         display: block;
     }
 }

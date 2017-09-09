@@ -166,7 +166,7 @@
             padding-left: 50px;
             padding-right: 0;
         }
-        @include lg {
+        @include xl {
             padding-right: 8%;
         }
     }
@@ -203,7 +203,7 @@
             padding-right: 50px;
             padding-left: 0;
         }
-        @include lg {
+        @include xl {
             padding-right: calc(8% + 50px);
         }
     }
@@ -460,7 +460,7 @@
     @include project--blue;
     .project__image {
         margin-top: -20px;
-        @include xl {
+        @include md {
             margin-top: -40px;
         }
     }
@@ -472,6 +472,9 @@
     @include md {
         padding-bottom: 0;
         margin-bottom: -20px;
+    }
+    @include lg {
+        margin-top: -40px;
     }
     @include xl {
         margin-top: -50px;
