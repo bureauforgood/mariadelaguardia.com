@@ -330,9 +330,10 @@
             }
         }
         @include xl {
+            margin-bottom: 20px;
             &:after {
-                top: 50px;
-                right: -38px;
+                top: 40px;
+                right: -40px;
             }
         }
     }
@@ -348,7 +349,7 @@
         background-image: linear-gradient(to right, $white, $white 25%, $yellow-bg 25%, $yellow-bg);
     }
     @include xl {
-        margin-right: 90px;
+        margin-right: 100px;
     }
 }
 
@@ -379,6 +380,7 @@
     @include xl {
         background-color: transparent;
         background-image: linear-gradient(to left, $white, $white 25%, $purple-bg 25%, $purple-bg);
+        margin-top: -40px;
     }
 }
 
@@ -421,6 +423,11 @@
             margin-top: -40px;
         }
     }
+    @include xl {
+        .project__image {
+            margin-top: -60px;
+        }
+    }
 }
 .project--2a {
     @include project--layout-image-left;
@@ -428,9 +435,6 @@
     @include md {
         padding-bottom: 0;
         margin-bottom: -20px;
-    }
-    @include xl {
-        margin-bottom: 10px;
     }
 }
 .project--2b {
@@ -462,8 +466,9 @@
 .project--3of4 {
     @include project--layout-image-left;
     @include project--blue-yellow;
-    @include xl {
-        margin-top: -50px;
+    @include md {
+        padding-bottom: 0;
+        margin-bottom: -20px;
     }
 }
 
@@ -474,7 +479,7 @@
         margin-top: -20px;
     }
     @include xl {
-        margin-bottom: -130px;
+        margin-bottom: 130px;
         .project__wrapper {
             margin-bottom: -240px;
         }
