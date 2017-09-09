@@ -153,6 +153,9 @@
             width: 100%;
             max-width: 100%;
         }
+        @include xl {
+            margin-top: -100px;
+        }
     }
 }
 
@@ -469,6 +472,9 @@
     @include md {
         padding-bottom: 0;
         margin-bottom: -20px;
+    }
+    @include xl {
+        margin-top: -50px;
     }
 }
 
