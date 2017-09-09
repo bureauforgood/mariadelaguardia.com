@@ -90,7 +90,7 @@
         @include md {
             width: 260px;
         }
-        @include lg {
+        @include xl {
             width: 390px;
         }
     }
@@ -101,7 +101,7 @@
             top: 70px;
             left: 158px;
         }
-        @include lg {
+        @include xl {
             top: 120px;
             left: 240px;
         }
@@ -114,7 +114,7 @@
             width: 90px;
             top: 215px;
         }
-        @include lg {
+        @include xl {
             width: 140px;
             top: 325px;
         }
@@ -124,7 +124,7 @@
         @include md {
             left: 35px;
         }
-        @include lg {
+        @include xl {
             left: 45px;
         }
     }
@@ -133,7 +133,7 @@
         @include md {
             left: 145px;
         }
-        @include lg {
+        @include xl {
             left: 210px;
         }
     }
@@ -264,8 +264,30 @@
 @mixin project--blue-yellow {
     background-color: $white;
     .project__image {
+        margin-top: -30px;
+        margin-bottom: 10px;
+        left: -30px;
         &:after {
             background-color: $box-blue;
+            top: 30px;
+            left: 0;
+            right: auto;
+            width: calc(100% - 20px);
+            height: calc(100% - 40px);
+        }
+        @include md {
+            left: -60px;
+            &:after {
+                left: -60px;
+            }
+        }
+        @include xl {
+            margin-top: -60px;
+            &:after {
+                top: 60px;
+                height: 95%;
+                height: calc(100% - 90px);
+            }
         }
     }
     .project__quote,
@@ -297,7 +319,21 @@
     background-color: $yellow-bg;
     .project__image {
         &:after {
-            background-color: $box-yellow;
+            background-color: $box-orange;
+            top: 30px;
+        }
+        @include md {
+            margin-top: -30px;
+            top: 60px;
+            &:after {
+                width: 75%;
+            }
+        }
+        @include xl {
+            &:after {
+                top: 50px;
+                right: -38px;
+            }
         }
     }
     .project__quote,
@@ -319,8 +355,21 @@
 @mixin project--purple {
     background-color: $purple-bg;
     .project__image {
+        margin-top: -10px;
+        right: -20px;
+        width: calc(100% + 10px);
         &:after {
             background-color: $box-blue;
+            top: 40px;
+            height: calc(100% - 20px);
+            @include xl {
+                top: 60px;
+            }
+        }
+        @include md {
+            width: 50%;
+            right: -60px;
+            top: 60px;
         }
     }
     .project__quote,
@@ -380,78 +429,54 @@
         padding-bottom: 0;
         margin-bottom: -20px;
     }
-    .project__image {
-        margin-top: -30px;
+    @include xl {
         margin-bottom: 10px;
-        left: -30px;
-        &:after {
-            top: 30px;
-            left: 0;
-            right: auto;
-            width: calc(100% - 20px);
-            height: calc(100% - 40px);
-        }
-        @include md {
-            left: -60px;
-            &:after {
-                left: -60px;
-            }
-        }
     }
 }
 .project--2b {
     @include project--layout-image-right;
     @include project--purple;
     @include decorated;
-    .project__image {
-        margin-top: -10px;
-        right: -20px;
-        width: calc(100% + 10px);
-        &:after {
-            top: 40px;
-            height: calc(100% - 20px);
-        }
-        @include md {
-            width: 50%;
-            right: -60px;
-            top: 60px;
-        }
-    }
 }
 .project--1of4 {
     @include project--layout-image-left;
     @include project--yellow;
     @include project--yellow--left;
     @include decorated;
-    .project__image {
-        &:after {
-            background-color: $box-orange;
-            top: 30px;
-        }
-        @include md {
-            margin-top: -30px;
-            top: 60px;
-            &:after {
-                width: 75%;
-            }
-        }
+    @include xl {
+        padding-bottom: 0;
     }
 }
+
 .project--2of4 {
     @include project--layout-image-right;
     @include project--blue;
     .project__image {
         margin-top: -20px;
+        @include xl {
+            margin-top: -40px;
+        }
     }
 }
+
 .project--3of4 {
     @include project--layout-image-left;
-    @include project--blue;
+    @include project--blue-yellow;
+    @include xl {
+        margin-top: -50px;
+    }
 }
+
 .project--4of4 {
     @include project--layout-image-right;
     @include project--purple;
     .project__image {
         margin-top: -20px;
+    }
+    @include xl {
+        margin-bottom: -130px;
+        .project__wrapper {
+            margin-bottom: -240px;
+        }
     }
 }
