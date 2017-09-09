@@ -9,6 +9,9 @@
         width: calc(100% - 60px);
         float: right;
     }
+    @include xl {
+        width: calc(100% - 100px);
+    }
 }
 
 .orgs__wrapper {

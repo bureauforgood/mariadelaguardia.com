@@ -1,14 +1,16 @@
 .about {
-    background-color: $peach-bg;
+    background-color: $peach-bg-solid;
     @include section-padding;
     padding-top: 80px;
     padding-bottom: 80px;
     @include md {
-        padding: 260px 0 140px;
+        padding: 110px 0;
         width: calc(100% - 53px);
     }
     @include xl {
-        width: calc(100% - 90px);
+        width: calc(100% - 100px);
+        padding-top: 260px;
+        margin-top: -240px;
     }
 }
 

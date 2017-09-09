@@ -73,9 +73,12 @@
 }
 
 .project__image--multiple {
-    height: 450px;
+    height: 420px;
     @include md {
         height: 650px;
+    }
+    @include xl {
+        height: 820px;
     }
     img {
         box-shadow: 0 0 60px rgba(0,0,0,0.5);
@@ -218,6 +221,9 @@
                 left: -40px;
             }
         }
+        @include xl {
+            right: -135px;
+        }
     }
 }
 
@@ -269,12 +275,21 @@
     &:after {
         content: "";
         display: block;
-        height: 85%;
-        width: 25%;
         background-color: $box-yellow;
         position: absolute;
+        height: 85%;
+        width: 70%;
         right: 0;
-        top: -40px;
+        top: 380px;
+        @include md {
+            height: 85%;
+            width: 25%;
+            right: 0;
+            top: -40px;
+        }
+        @include xl {
+            top: -70px;
+        }
     }
 }
 
@@ -294,7 +309,7 @@
 @mixin project--yellow--left {
     @include md {
         background-color: transparent;
-        background-image: linear-gradient(to right, $white, $white 20%, $yellow-bg 20%, $yellow-bg);
+        background-image: linear-gradient(to right, $white, $white 25%, $yellow-bg 25%, $yellow-bg);
     }
     @include xl {
         margin-right: 90px;
@@ -311,6 +326,10 @@
     .project__quote,
     .project__citation {
         color: $blue;
+    }
+    @include xl {
+        background-color: transparent;
+        background-image: linear-gradient(to left, $white, $white 25%, $purple-bg 25%, $purple-bg);
     }
 }
 
@@ -335,6 +354,9 @@
         .project__image {
             margin-top: -40px;
         }
+    }
+    @include xl {
+        padding-bottom: 0;
     }
 }
 .project--1b {
@@ -402,12 +424,12 @@
     @include project--yellow--left;
     @include decorated;
     .project__image {
-        margin-top: -30px;
         &:after {
             background-color: $box-orange;
             top: 30px;
         }
         @include md {
+            margin-top: -30px;
             top: 60px;
             &:after {
                 width: 75%;
