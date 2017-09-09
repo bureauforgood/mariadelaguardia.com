@@ -55,6 +55,9 @@
         transform: rotate(-90deg);
         transform-origin: 0 0;
     }
+    @include xl {
+        left: 40px;
+    }
 }
 
 .social-links {
@@ -66,5 +69,8 @@
         left: calc( 100vw - 21px );
         transform: rotate(90deg);
         transform-origin: 0 0;
+    }
+    @include xl {
+        left: calc( 100vw - 39px );
     }
 }

@@ -7,6 +7,9 @@
         padding: 260px 0 140px;
         width: calc(100% - 53px);
     }
+    @include xl {
+        width: calc(100% - 90px);
+    }
 }
 
 .about__wrapper {

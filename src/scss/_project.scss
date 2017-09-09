@@ -296,6 +296,9 @@
         background-color: transparent;
         background-image: linear-gradient(to right, $white, $white 20%, $yellow-bg 20%, $yellow-bg);
     }
+    @include xl {
+        margin-right: 90px;
+    }
 }
 
 @mixin project--purple {
