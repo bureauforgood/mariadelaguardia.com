@@ -20,9 +20,6 @@
     @include md {
         width: 50%;
     }
-    @include lg {
-        width: 45.8333%;
-    }
 }
 
 .project__head {
@@ -163,6 +160,9 @@
             padding-left: 50px;
             padding-right: 0;
         }
+        @include lg {
+            padding-right: 8%;
+        }
     }
     .project__image {
         margin-bottom: 40px;
@@ -196,6 +196,9 @@
             order: 1;
             padding-right: 50px;
             padding-left: 0;
+        }
+        @include lg {
+            padding-right: calc(8% + 50px);
         }
     }
     .project__image {
