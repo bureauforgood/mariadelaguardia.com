@@ -37,9 +37,7 @@ function handleError() {
 
 // Compile SCSS
 gulp.task('styles', function() {
-    return gulp.src([
-        source+'scss/style.scss'
-    ])
+    return gulp.src([source+'scss/style.scss'])
     .pipe(sass({includePaths: ['node_modules']}))
         .on('error', handleError)
         .on('error', notify.onError())
