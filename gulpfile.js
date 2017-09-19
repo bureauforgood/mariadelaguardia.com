@@ -13,6 +13,7 @@ var autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create(),
     cssnano = require('gulp-cssnano'),
     gulp = require('gulp'),
+    neat = require('node-neat'),
     notify = require('gulp-notify'),
     p = require('./package.json'),
     pug = require('gulp-pug'),
@@ -38,7 +39,9 @@ function handleError() {
 // Compile SCSS
 gulp.task('styles', function() {
     return gulp.src([source+'scss/style.scss'])
-    .pipe(sass({includePaths: ['node_modules']}))
+    .pipe(sass({
+            includePaths: neat.with('node_modules')
+        }))
         .on('error', handleError)
         .on('error', notify.onError())
     .pipe(autoprefixer())
