@@ -131,11 +131,8 @@
 @mixin project--layout-image-left {
     .project__info {
         @include md {
-            padding-left: 50px;
-            padding-right: 0;
-        }
-        @include xl {
-            padding-right: 8%;
+            padding-right: 4%;
+
         }
     }
     .project__image {
