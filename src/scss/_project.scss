@@ -44,7 +44,6 @@ $project-image-offset-lg: 140px;
 // Image Variations
 .project__image {
     @include standard-grid;
-
     order: 1;
     position: relative;
     display: block;
@@ -62,16 +61,20 @@ $project-image-offset-lg: 140px;
 
 .project__image--single {
     > img {
-        width: 100%;
-        max-width: 100%;
         box-shadow: 0 0 60px rgba(0,0,0,0.5);
     }
 }
 
+.project__image--single,
 .project__image--multi-holder {
     > img {
         width: 100%;
-        max-width: 100%;
+        @include md {
+            width: calc(100% + #{$md-gutter});
+        }
+        @include xl {
+            width: calc(100% + #{$lg-gutter});
+        }
     }
 }
 
@@ -89,7 +92,7 @@ $project-image-offset-lg: 140px;
     img:nth-child(1),
     img:nth-child(2) {
         top: 0;
-        width: 62%;
+        width: 73%;
     }
     img:nth-child(2) {
         top: 15%;
