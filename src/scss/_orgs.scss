@@ -2,7 +2,7 @@
     background-color: $peach-bg;
     text-align: center;
     padding: 80px $sm-gutter 120px;
-    overflow: hidden;
+    position: relative;
     @include decorated;
     @include md {
         padding-top: 160px;

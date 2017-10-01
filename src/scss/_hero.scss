@@ -28,10 +28,7 @@
 }
 
 .hero__info {
-    @include grid-column(6, $neat-grid);
-    @include grid-media($neat-grid-md-up) {
-        @include grid-column(3);
-    }
+    @include standard-grid;
 }
 
 .hero__head {

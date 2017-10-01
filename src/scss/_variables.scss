@@ -1,20 +1,33 @@
-// GRID
-$neat-grid: (
-  columns: 6,
-  gutter: 30px,
-);
-
-$neat-grid-md-up: (
-  columns: 6,
-  gutter: 100px,
-  media: "(min-width: 768px)",
-);
-
 // Gutters / LR Spacing
 $sm-gutter: 30px;
 $md-gutter: 60px;
 $lg-gutter: 100px;
 
+// GRID
+$neat-grid: (
+  columns: 6,
+  gutter: $sm-gutter,
+);
+
+$neat-grid-md-up: (
+  columns: 6,
+  gutter: $md-gutter,
+);
+
+$neat-grid-lg-up: (
+  columns: 6,
+  gutter: $lg-gutter,
+);
+
+@mixin standard-grid {
+  @include grid-column(6, $neat-grid);
+  @include md {
+    @include grid-column(3, $neat-grid-md-up);
+  }
+  @include xl {
+    @include grid-column(3, $neat-grid-lg-up);
+  }
+}
 
 // COLORS
 $white: #fff;

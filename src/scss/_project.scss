@@ -1,3 +1,6 @@
+$project-image-offset-md: 100px;
+$project-image-offset-lg: 140px;
+
 // Global Project Styles
 .project {
     position: relative;
@@ -16,9 +19,9 @@
 .project__info {
     order: 2;
     z-index: 1;
-    @include grid-column(6, $neat-grid);
-    @include grid-media($neat-grid-md-up) {
-        @include grid-column(3);
+    @include standard-grid;
+    @include md {
+        padding-right: 6%;
     }
 }
 
@@ -40,10 +43,8 @@
 
 // Image Variations
 .project__image {
-    @include grid-column(6, $neat-grid);
-    @include grid-media($neat-grid-md-up) {
-        @include grid-column(3);
-    }
+    @include standard-grid;
+
     order: 1;
     position: relative;
     display: block;
@@ -60,7 +61,7 @@
 }
 
 .project__image--single {
-    img {
+    > img {
         width: 100%;
         max-width: 100%;
         box-shadow: 0 0 60px rgba(0,0,0,0.5);
@@ -129,12 +130,6 @@
 
 // Layout Variations
 @mixin project--layout-image-left {
-    .project__info {
-        @include md {
-            padding-right: 4%;
-
-        }
-    }
     .project__image {
         margin-bottom: 40px;
         left: -55px;
@@ -143,14 +138,14 @@
             right: -26px;
         }
         @include md {
-            left: -100px;
+            left: -($project-image-offset-md);
             &:after {
                 top: -28px;
                 right: -38px;
             }
         }
-        @include lg {
-            left: -100px;
+        @include xl {
+            left: -($project-image-offset-lg);
             &:after {
                 top: -36px;
                 right: -48px;
@@ -160,16 +155,6 @@
 }
 
 @mixin project--layout-image-right {
-    .project__info {
-        @include md {
-            order: 1;
-            padding-right: 50px;
-            padding-left: 0;
-        }
-        @include xl {
-            padding-right: calc(8% + 50px);
-        }
-    }
     .project__image {
         margin-bottom: 40px;
         right: -20px;
@@ -179,14 +164,14 @@
         }
         @include md {
             order: 2;
-            right: -100px;
+            right: -($project-image-offset-md);
             &:after {
                 top: 40px;
                 left: -40px;
             }
         }
         @include xl {
-            right: -135px;
+            right: -($project-image-offset-lg);
         }
     }
 }
@@ -230,7 +215,6 @@
     .project__image {
         margin-top: -30px;
         margin-bottom: 10px;
-        left: -30px;
         &:after {
             background-color: $box-blue;
             top: 30px;
@@ -240,7 +224,6 @@
             height: calc(100% - 40px);
         }
         @include md {
-            left: -60px;
             &:after {
                 left: -60px;
             }
