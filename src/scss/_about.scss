@@ -1,6 +1,6 @@
 .about {
     background-color: $peach-bg-solid;
-    @include section-padding;
+    //@include section-padding;
     padding-top: 80px;
     padding-bottom: 80px;
     @include md {

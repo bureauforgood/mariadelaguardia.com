@@ -1,3 +1,16 @@
+// GRID
+$neat-grid: (
+  columns: 6,
+  gutter: 30px,
+);
+
+$neat-grid-md-up: (
+  columns: 6,
+  gutter: 60px,
+  media: "(min-width: 768px)",
+);
+
+
 // COLORS
 $white: #fff;
 $black: #000;
@@ -33,21 +46,21 @@ $box-orange: rgba(230,129,96,0.25);
 
 //GLOBAL SETTINGS
 
-@mixin wrapper {
-    width: 100%;
-    max-width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
-}
+// @mixin wrapper {
+//     width: 100%;
+//     max-width: 1240px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
 
-@mixin section-padding() {
-    padding-left: 30px;
-    padding-right: 30px;
-    @include md {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-}
+// @mixin section-padding() {
+//     padding-left: 30px;
+//     padding-right: 30px;
+//     @include md {
+//         padding-left: 60px;
+//         padding-right: 60px;
+//     }
+// }
 $timing: 0.15s;
 
 // MEDIA QUERIES

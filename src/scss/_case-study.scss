@@ -11,8 +11,8 @@
 }
 
 .casestudy__wrapper {
-    @include wrapper;
-    max-width: 840px;
+    //@include wrapper;
+    //max-width: 840px;
     padding: 40px 30px;
     @include md {
         padding: 100px 60px;

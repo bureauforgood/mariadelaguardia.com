@@ -2,20 +2,18 @@
     background-color: $peach-bg;
     text-align: center;
     padding: 80px 30px 120px;
+    overflow: hidden;
     @include decorated;
     @include md {
         padding-top: 160px;
         padding-bottom: 160px;
         width: calc(100% - 60px);
-        float: right;
+        margin-left: 60px;
     }
     @include xl {
         width: calc(100% - 100px);
+        margin-left: 100px;
     }
-}
-
-.orgs__wrapper {
-    @include wrapper;
 }
 
 .orgs__logos {

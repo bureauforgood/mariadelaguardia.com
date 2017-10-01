@@ -1,14 +1,13 @@
 // Global Project Styles
 .project {
-    @include section-padding;
     position: relative;
     padding-bottom: 80px;
 }
 
 .project__wrapper {
-    display: inherit;
+    display: flex;
     flex-direction: inherit;
-    @include wrapper;
+    @include grid-container;
     @include md {
         align-items: center;
     }
@@ -17,8 +16,9 @@
 .project__info {
     order: 2;
     z-index: 1;
-    @include md {
-        width: 50%;
+    @include grid-column(6, $neat-grid);
+    @include grid-media($neat-grid-md-up) {
+        @include grid-column(3);
     }
 }
 
@@ -40,6 +40,10 @@
 
 // Image Variations
 .project__image {
+    @include grid-column(6, $neat-grid);
+    @include grid-media($neat-grid-md-up) {
+        @include grid-column(3);
+    }
     order: 1;
     position: relative;
     display: block;
@@ -53,9 +57,6 @@
         position: absolute;
         z-index: -1;
     }
-    @include md {
-        width: 50%;
-    }
 }
 
 .project__image--single {
@@ -66,6 +67,13 @@
     }
 }
 
+.project__image--multi-holder {
+    > img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 .project__image--precomposed {
     img {
         box-shadow: none;
@@ -73,69 +81,29 @@
 }
 
 .project__image--multiple {
-    height: 420px;
-    @include md {
-        height: 650px;
-    }
-    @include xl {
-        height: 820px;
-    }
     img {
         box-shadow: 0 0 60px rgba(0,0,0,0.5);
         position: absolute;
     }
     img:nth-child(1),
     img:nth-child(2) {
-        width: 195px;
-        @include md {
-            width: 260px;
-        }
-        @include xl {
-            width: 390px;
-        }
+        top: 0;
+        width: 62%;
     }
     img:nth-child(2) {
-        top: 60px;
-        left: 120px;
-        @include md {
-            top: 70px;
-            left: 158px;
-        }
-        @include xl {
-            top: 120px;
-            left: 240px;
-        }
+        top: 15%;
+        left: 38%;
     }
     img:nth-child(3),
     img:nth-child(4) {
-        width: 70px;
-        top: 160px;
-        @include md {
-            width: 90px;
-            top: 215px;
-        }
-        @include xl {
-            width: 140px;
-            top: 325px;
-        }
+        width: 22%;
+        top: 40%;
     }
     img:nth-child(3) {
-        left: 25px;
-        @include md {
-            left: 35px;
-        }
-        @include xl {
-            left: 45px;
-        }
+        left: 8%;
     }
     img:nth-child(4) {
-        left: 110px;
-        @include md {
-            left: 145px;
-        }
-        @include xl {
-            left: 210px;
-        }
+        left: 34%;
     }
 }
 
@@ -173,14 +141,12 @@
     .project__image {
         margin-bottom: 40px;
         left: -55px;
-        width: 110%;
         &:after {
             top: -20px;
             right: -26px;
         }
         @include md {
             left: -100px;
-            width: 50%;
             &:after {
                 top: -28px;
                 right: -38px;
@@ -210,7 +176,6 @@
     .project__image {
         margin-bottom: 40px;
         right: -20px;
-        width: 110%;
         &:after {
             top: 20px;
             left: -20px;
@@ -218,7 +183,6 @@
         @include md {
             order: 2;
             right: -100px;
-            width: 50%;
             &:after {
                 top: 40px;
                 left: -40px;

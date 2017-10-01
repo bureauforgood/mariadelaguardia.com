@@ -1,10 +1,11 @@
 .hero {
+    position: relative;
     background: $peach-bg;
     justify-content: center;
-    padding: 210px 30px 260px;
+    padding: 210px 0 260px;
     z-index: 1;
     @include md {
-        padding: 140px 60px;
+        padding: 140px 0;
         &:before {
             content: "";
             display: block;
@@ -19,18 +20,17 @@
 }
 
 .hero__wrapper {
-    @include wrapper;
-    display: inherit;
     align-items: center;
+    @include grid-container;
+    @include md {
+        display: flex;
+    }
 }
 
 .hero__info {
-    position: relative;
-    @include md {
-        padding-right: 6%;
-    }
-    @include lg {
-        padding-right: 22%;
+    @include grid-column(6, $neat-grid);
+    @include grid-media($neat-grid-md-up) {
+        @include grid-column(3);
     }
 }
 
@@ -55,16 +55,19 @@
     @include body-copy;
 }
 
+
+.hero__imagecont {
+    @include grid-column(2);
+    @include grid-push(1);
+}
+
 .hero__image {
     display: none;
     @include md {
         display: block;
         position: relative;
-        max-width: 248px;
+        max-width: 284px;
         box-shadow: 0 0 60px rgba(0,0,0,0.3);
         border-radius: 50px;
-    }
-    @include lg {
-        right: 8%;
     }
 }
