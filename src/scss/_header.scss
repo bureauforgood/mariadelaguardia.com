@@ -1,13 +1,15 @@
 .site-header {
     position: fixed;
     overflow: visible;
-    padding: 45px 30px 0;
+    padding: 45px $sm-gutter 0;
     z-index: 100;
     width: 100%;
     @include md {
-        padding: 75px 60px 0;
+        padding: 75px $md-gutter 0;
     }
-}
+    @include xl {
+        padding: 75px $lg-gutter 0;
+    }}
 
 .site-header__wrapper {
     position: relative;

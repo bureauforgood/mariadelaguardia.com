@@ -1,18 +1,18 @@
 .orgs {
     background-color: $peach-bg;
     text-align: center;
-    padding: 80px 30px 120px;
+    padding: 80px $sm-gutter 120px;
     overflow: hidden;
     @include decorated;
     @include md {
         padding-top: 160px;
         padding-bottom: 160px;
-        width: calc(100% - 60px);
-        margin-left: 60px;
+        width: calc(100% - $md-gutter);
+        margin-left: $md-gutter;
     }
     @include xl {
-        width: calc(100% - 100px);
-        margin-left: 100px;
+        width: calc(100% - $lg-gutter);
+        margin-left: $lg-gutter;
     }
 }
 

@@ -6,9 +6,14 @@ $neat-grid: (
 
 $neat-grid-md-up: (
   columns: 6,
-  gutter: 60px,
+  gutter: 100px,
   media: "(min-width: 768px)",
 );
+
+// Gutters / LR Spacing
+$sm-gutter: 30px;
+$md-gutter: 60px;
+$lg-gutter: 100px;
 
 
 // COLORS
