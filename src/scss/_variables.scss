@@ -63,22 +63,6 @@ $box-blue: rgba(81,143,190,0.25);
 $box-orange: rgba(230,129,96,0.25);
 
 //GLOBAL SETTINGS
-
-// @mixin wrapper {
-//     width: 100%;
-//     max-width: 1240px;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-
-// @mixin section-padding() {
-//     padding-left: 30px;
-//     padding-right: 30px;
-//     @include md {
-//         padding-left: 60px;
-//         padding-right: 60px;
-//     }
-// }
 $timing: 0.15s;
 
 // MEDIA QUERIES
@@ -86,7 +70,7 @@ $timing: 0.15s;
 $screen-sm-min: 576px;
 
 // Small tablets (portrait view)
-$screen-md-min: 768px;
+$screen-md-min: 640px;
 
 // Tablets and small desktops
 $screen-lg-min: 1024px;

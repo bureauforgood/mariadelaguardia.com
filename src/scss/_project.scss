@@ -1,6 +1,10 @@
 $project-image-offset-md: 100px;
 $project-image-offset-lg: 140px;
 
+// since we are shifting the project images off the grid (off screen)
+// we need to make them a bit bigger so the center gutter stays consistent
+$md-project-image-adjustment: 50px;
+
 // Global Project Styles
 .project {
     position: relative;
@@ -21,7 +25,7 @@ $project-image-offset-lg: 140px;
     order: 2;
     z-index: 1;
     @include standard-grid;
-    @include md {
+    @include lg {
         padding-right: 6%;
     }
 }
@@ -46,6 +50,9 @@ $project-image-offset-lg: 140px;
 .project__image {
     @include standard-grid;
     width: calc(100% - 30px);
+    @include md {
+        width: calc(50% - 40px);
+    }
     order: 1;
     position: relative;
     display: block;
@@ -72,7 +79,7 @@ $project-image-offset-lg: 140px;
     > img {
         width: 100%;
         @include md {
-            width: calc(100% + #{$md-gutter});
+            width: calc(100% + #{$md-project-image-adjustment});
         }
         @include xl {
             width: calc(100% + #{$lg-gutter});
@@ -88,6 +95,9 @@ $project-image-offset-lg: 140px;
 
 .project__image--multiple {
     margin-bottom: 120px;
+    @include md {
+        margin-bottom: 0;
+    }
     img {
         box-shadow: 0 0 60px rgba(0,0,0,0.5);
         position: absolute;
@@ -136,6 +146,11 @@ $project-image-offset-lg: 140px;
 
 // Layout Variations
 @mixin project--layout-image-left {
+    .project__info {
+        @include md {
+            margin-left: 10px;
+        }
+    }
     .project__image {
         margin-bottom: 40px;
         left: -55px;
@@ -178,6 +193,11 @@ $project-image-offset-lg: 140px;
         }
         @include xl {
             right: -($project-image-offset-lg);
+        }
+        &.project__image--multi-holder {
+            @include md {
+                right: -70px;
+            }
         }
     }
 }
