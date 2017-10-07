@@ -1,7 +1,7 @@
 // Gutters / LR Spacing
 $sm-gutter: 30px;
 $md-gutter: 60px;
-$lg-gutter: 100px;
+$lg-gutter: 60px;
 
 // GRID
 $neat-grid: (
@@ -24,7 +24,7 @@ $neat-grid-lg-up: (
     @include md {
         @include grid-column(3, $neat-grid-md-up);
     }
-    @include xl {
+    @include lg {
         @include grid-column(3, $neat-grid-lg-up);
     }
 }

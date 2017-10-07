@@ -8,7 +8,7 @@
         padding: 110px 0;
         width: calc(100% - 53px);
     }
-    @include xl {
+    @include lg {
         width: calc(100% - 100px);
         padding-top: 260px;
         margin-top: -240px;

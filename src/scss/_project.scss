@@ -132,7 +132,7 @@ $md-project-image-adjustment: 50px;
             width: 100%;
             max-width: 100%;
         }
-        @include xl {
+        @include lg {
             margin-top: -100px;
         }
     }
@@ -262,7 +262,7 @@ $md-project-image-adjustment: 50px;
                 left: -60px;
             }
         }
-        @include xl {
+        @include lg {
             margin-top: -60px;
             &:after {
                 top: 60px;
@@ -290,7 +290,7 @@ $md-project-image-adjustment: 50px;
             right: 0;
             top: -40px;
         }
-        @include xl {
+        @include lg {
             top: -70px;
         }
     }
@@ -310,7 +310,7 @@ $md-project-image-adjustment: 50px;
                 width: 75%;
             }
         }
-        @include xl {
+        @include lg {
             margin-bottom: 20px;
             &:after {
                 top: 40px;
@@ -333,7 +333,7 @@ $md-project-image-adjustment: 50px;
             right: auto;
         }
     }
-    @include xl {
+    @include lg {
         margin-right: 100px;
     }
 }
@@ -348,7 +348,7 @@ $md-project-image-adjustment: 50px;
             background-color: $box-blue;
             top: 40px;
             height: calc(100% - 20px);
-            @include xl {
+            @include lg {
                 top: 60px;
             }
         }
@@ -365,7 +365,7 @@ $md-project-image-adjustment: 50px;
     .project__citation {
         color: $blue;
     }
-    @include xl {
+    @include lg {
         background-color: transparent;
         background-image: linear-gradient(to left, $white, $white 25%, $purple-bg 25%, $purple-bg);
         margin-top: -40px;
@@ -394,7 +394,7 @@ $md-project-image-adjustment: 50px;
             margin-top: -40px;
         }
     }
-    @include xl {
+    @include lg {
         padding-bottom: 0;
     }
 }
@@ -411,7 +411,7 @@ $md-project-image-adjustment: 50px;
             margin-top: -40px;
         }
     }
-    @include xl {
+    @include lg {
         .project__image {
             margin-top: -60px;
         }
@@ -431,11 +431,11 @@ $md-project-image-adjustment: 50px;
     @include decorated;
 }
 .project--1of4 {
+    @include decorated;
     @include project--layout-image-left;
     @include project--yellow;
     @include project--yellow--left;
-    @include decorated;
-    @include xl {
+    @include lg {
         padding-bottom: 0;
     }
 }
@@ -461,7 +461,7 @@ $md-project-image-adjustment: 50px;
     @include lg {
         margin-top: -40px;
     }
-    @include xl {
+    @include lg {
         margin-top: -50px;
     }
 }
@@ -472,7 +472,7 @@ $md-project-image-adjustment: 50px;
     .project__image {
         margin-top: -20px;
     }
-    @include xl {
+    @include lg {
         margin-bottom: 130px;
         .project__wrapper {
             margin-bottom: -240px;
