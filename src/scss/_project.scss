@@ -1,4 +1,4 @@
-$project-image-offset-md: 100px;
+$project-image-offset-md: 90px;
 $project-image-offset-lg: 140px;
 
 // since we are shifting the project images off the grid (off screen)
@@ -70,20 +70,14 @@ $md-project-image-adjustment: 50px;
 
 .project__image--single {
     > img {
+        width: 100%;
         box-shadow: 0 0 60px rgba(0,0,0,0.5);
     }
 }
 
-.project__image--single,
 .project__image--multi-holder {
     > img {
         width: 100%;
-        @include md {
-            width: calc(100% + #{$md-project-image-adjustment});
-        }
-        @include xl {
-            width: calc(100% + #{$lg-gutter});
-        }
     }
 }
 
@@ -105,22 +99,22 @@ $md-project-image-adjustment: 50px;
     img:nth-child(1),
     img:nth-child(2) {
         top: 0;
-        width: 73%;
+        width: 66%;
     }
     img:nth-child(2) {
-        top: 15%;
-        left: 38%;
+        top: 14%;
+        left: 34%;
     }
     img:nth-child(3),
     img:nth-child(4) {
-        width: 22%;
-        top: 40%;
+        width: 20%;
+        top: 34%;
     }
     img:nth-child(3) {
-        left: 8%;
+        left: 7%;
     }
     img:nth-child(4) {
-        left: 34%;
+        left: 30%;
     }
 }
 
@@ -153,7 +147,7 @@ $md-project-image-adjustment: 50px;
     }
     .project__image {
         margin-bottom: 40px;
-        left: -55px;
+        left: -30px;
         &:after {
             top: -20px;
             right: -26px;
@@ -170,6 +164,11 @@ $md-project-image-adjustment: 50px;
             &:after {
                 top: -36px;
                 right: -48px;
+            }
+        }
+        &.project__image--multi-holder {
+            @include md {
+                left: -50px;
             }
         }
     }
@@ -342,7 +341,7 @@ $md-project-image-adjustment: 50px;
         }
         @include md {
             width: 50%;
-            right: -60px;
+            right: -53px;
             top: 60px;
         }
     }

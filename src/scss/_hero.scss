@@ -9,7 +9,7 @@
         &:before {
             content: "";
             display: block;
-            width: 24%;
+            width: 32vw;
             height: 550px;
             background-color: $box-yellow;
             position: absolute;
@@ -55,7 +55,7 @@
 
 .hero__imagecont {
     @include grid-column(2);
-    @include grid-push(1);
+    @include grid-push(0.5);
 }
 
 .hero__image {
