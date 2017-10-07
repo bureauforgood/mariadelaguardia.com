@@ -1,8 +1,9 @@
 .about {
-    position: relative;
     background-color: $peach-bg-solid;
+    position: relative;
     padding-top: 80px;
     padding-bottom: 80px;
+    overflow: hidden;
     @include md {
         padding: 110px 0;
         width: calc(100% - 53px);
@@ -15,6 +16,9 @@
 }
 
 .about__wrapper {
+    @media (max-width: #{$screen-md-min} - 1px ) {
+        @include grid-column(6);
+    }
     @include md {
         display: grid;
         grid-template-columns: 3.6fr 5.6fr 3.4fr;

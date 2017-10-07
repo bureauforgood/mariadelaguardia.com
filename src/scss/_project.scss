@@ -9,9 +9,10 @@ $project-image-offset-lg: 140px;
 
 .project__wrapper {
     display: flex;
-    flex-direction: inherit;
+    flex-direction: column;
     @include grid-container;
     @include md {
+        flex-direction: row;
         align-items: center;
     }
 }
@@ -44,6 +45,7 @@ $project-image-offset-lg: 140px;
 // Image Variations
 .project__image {
     @include standard-grid;
+    width: calc(100% - 30px);
     order: 1;
     position: relative;
     display: block;
@@ -85,6 +87,7 @@ $project-image-offset-lg: 140px;
 }
 
 .project__image--multiple {
+    margin-bottom: 120px;
     img {
         box-shadow: 0 0 60px rgba(0,0,0,0.5);
         position: absolute;

@@ -5,28 +5,28 @@ $lg-gutter: 100px;
 
 // GRID
 $neat-grid: (
-  columns: 6,
-  gutter: $sm-gutter,
+    columns: 6,
+    gutter: $sm-gutter,
 );
 
 $neat-grid-md-up: (
-  columns: 6,
-  gutter: $md-gutter,
+    columns: 6,
+    gutter: $md-gutter,
 );
 
 $neat-grid-lg-up: (
-  columns: 6,
-  gutter: $lg-gutter,
+    columns: 6,
+    gutter: $lg-gutter,
 );
 
 @mixin standard-grid {
-  @include grid-column(6, $neat-grid);
-  @include md {
-    @include grid-column(3, $neat-grid-md-up);
-  }
-  @include xl {
-    @include grid-column(3, $neat-grid-lg-up);
-  }
+    @include grid-column(6);
+    @include md {
+        @include grid-column(3, $neat-grid-md-up);
+    }
+    @include xl {
+        @include grid-column(3, $neat-grid-lg-up);
+    }
 }
 
 // COLORS
@@ -96,36 +96,36 @@ $screen-xl-min: 1440px;
 
 // Small devices
 @mixin sm {
-   @media (min-width: #{$screen-sm-min}) {
-       @content;
-   }
+     @media (min-width: #{$screen-sm-min}) {
+             @content;
+     }
 }
 
 // Medium devices
 @mixin md {
-   @media (min-width: #{$screen-md-min}) {
-       @content;
-   }
+     @media (min-width: #{$screen-md-min}) {
+             @content;
+     }
 }
 
 // Large devices
 @mixin lg {
-   @media (min-width: #{$screen-lg-min}) {
-       @content;
-   }
+     @media (min-width: #{$screen-lg-min}) {
+             @content;
+     }
 }
 
 // Extra large devices
 @mixin xl {
-   @media (min-width: #{$screen-xl-min}) {
-       @content;
-   }
+     @media (min-width: #{$screen-xl-min}) {
+             @content;
+     }
 }
 
 // Custom devices
 @mixin rwd($screen) {
-   @media (min-width: $screen+'px') {
-       @content;
-   }
+     @media (min-width: $screen+'px') {
+             @content;
+     }
 }
 
