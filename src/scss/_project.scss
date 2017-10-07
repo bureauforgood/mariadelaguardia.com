@@ -1,5 +1,5 @@
 $project-image-offset-md: 90px;
-$project-image-offset-lg: 140px;
+$project-image-offset-lg: 120px;
 
 // since we are shifting the project images off the grid (off screen)
 // we need to make them a bit bigger so the center gutter stays consistent
@@ -144,6 +144,9 @@ $md-project-image-adjustment: 50px;
         @include md {
             margin-left: 10px;
         }
+        @include md {
+            margin-left: 30px;
+        }
     }
     .project__image {
         margin-bottom: 40px;
@@ -159,7 +162,7 @@ $md-project-image-adjustment: 50px;
                 right: -38px;
             }
         }
-        @include xl {
+        @include lg {
             left: -($project-image-offset-lg);
             &:after {
                 top: -36px;
@@ -169,6 +172,9 @@ $md-project-image-adjustment: 50px;
         &.project__image--multi-holder {
             @include md {
                 left: -50px;
+            }
+            @include lg {
+                left: -70px;
             }
         }
     }
@@ -190,12 +196,15 @@ $md-project-image-adjustment: 50px;
                 left: -40px;
             }
         }
-        @include xl {
+        @include lg {
             right: -($project-image-offset-lg);
         }
         &.project__image--multi-holder {
             @include md {
                 right: -40px;
+            }
+            @include lg {
+                right: -60px;
             }
         }
     }
@@ -319,6 +328,10 @@ $md-project-image-adjustment: 50px;
     @include md {
         background-color: transparent;
         background-image: linear-gradient(to right, $white, $white 25%, $yellow-bg 25%, $yellow-bg);
+        &:after {
+            left: 50vw;
+            right: auto;
+        }
     }
     @include xl {
         margin-right: 100px;
@@ -343,6 +356,9 @@ $md-project-image-adjustment: 50px;
             width: 50%;
             right: -53px;
             top: 60px;
+        }
+        @include lg {
+            right: -73px;
         }
     }
     .project__quote,
