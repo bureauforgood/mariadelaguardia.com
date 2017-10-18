@@ -18,6 +18,7 @@ var autoprefixer = require('gulp-autoprefixer'),
     p = require('./package.json'),
     pug = require('gulp-pug'),
     sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
     sourcestream = require('vinyl-source-stream');
 
 
@@ -39,11 +40,13 @@ function handleError() {
 // Compile SCSS
 gulp.task('styles', function() {
     return gulp.src([source+'scss/style.scss'])
+    .pipe(sourcemaps.init())
     .pipe(sass({
            includePaths: ['node_modules'].concat(neat)
         }))
         .on('error', handleError)
         .on('error', notify.onError())
+    .pipe(sourcemaps.write())
     .pipe(autoprefixer())
     .pipe(gulp.dest(dist+'css/'))
     .pipe(browserSync.stream());
