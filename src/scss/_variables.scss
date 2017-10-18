@@ -76,7 +76,7 @@ $screen-md-min: 1024px; //640px;
 $screen-lg-min: 1440px; //1024px;
 
 // Large tablets and desktops
-// $screen-xl-min: 1440px;
+$screen-xl-min: 1600px; //1440px;
 
 // Small devices
 @mixin sm {
