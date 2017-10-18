@@ -70,13 +70,13 @@ $timing: 0.15s;
 $screen-sm-min: 576px;
 
 // Small tablets (portrait view)
-$screen-md-min: 640px;
+$screen-md-min: 1024px; //640px;
 
 // Tablets and small desktops
-$screen-lg-min: 1024px;
+$screen-lg-min: 1440px; //1024px;
 
 // Large tablets and desktops
-$screen-xl-min: 1440px;
+// $screen-xl-min: 1440px;
 
 // Small devices
 @mixin sm {
