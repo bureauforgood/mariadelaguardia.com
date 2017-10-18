@@ -144,9 +144,6 @@ $md-project-image-adjustment: 50px;
         @include md {
             margin-left: 10px;
         }
-        @include md {
-            margin-left: 30px;
-        }
     }
     .project__image {
         margin-bottom: 40px;
@@ -437,6 +434,17 @@ $md-project-image-adjustment: 50px;
     @include project--yellow--left;
     @include lg {
         padding-bottom: 0;
+    }
+
+    .project__info {
+
+        @include md {
+            margin-left: 10px;
+        }
+
+        @include lg{
+            margin-left: 60px;
+        }
     }
 }
 
