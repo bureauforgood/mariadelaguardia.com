@@ -16,10 +16,10 @@
     margin-right: auto;
     padding: 40px $sm-gutter;
     @include md {
-        padding: 100px $md-gutter;
+        padding: 100px 104px;
     }
     @include xl {
-        padding: 100px $lg-gutter;
+        //padding: 100px $lg-gutter;
     }
 }
 
