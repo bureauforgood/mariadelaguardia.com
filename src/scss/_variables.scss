@@ -115,39 +115,44 @@ $screen-xl-min: 1600px; //1440px;
 
 
 body {
-    border-top: 20px solid red;
     &:before {
         content: 'defualt';
-        position: absolute;
+        position: fixed;
         top: -20px;
         color: $white;
+        height: 20px;
+        width: 100%;
+        background: red;
+        top: 0;
+        left: 0;
+        z-index: 100000;
     }
 
     @include sm {
-        border-top-color: blue;
         &:before {
             content: "small";
+            background: blue;
         }
     }
 
     @include md {
-        border-top-color: orange;
         &:before {
             content: "medium";
+            background: orange;
         }
     }
 
     @include lg {
-        border-top-color: pink;
         &:before {
             content: "large";
+            background: pink;
         }
     }
 
     @include xl {
-        border-top: 4px solid purple;
         &:before {
             content: "xlarge";
+            background: purple;
         }
     }
 }

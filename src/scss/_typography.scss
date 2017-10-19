@@ -36,7 +36,7 @@ $serif-stack: 'Times New Roman', Times, Georgia, serif;
     font-size: 30px;
     line-height: 1.2;
     margin-bottom: 6px;
-    @include xl {
+    @include lg {
         font-size: 36px;
     }
 }
