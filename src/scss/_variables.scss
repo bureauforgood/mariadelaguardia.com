@@ -113,3 +113,42 @@ $screen-xl-min: 1600px; //1440px;
      }
 }
 
+
+body {
+    border-top: 20px solid red;
+    &:before {
+        content: 'defualt';
+        position: absolute;
+        top: -20px;
+        color: $white;
+    }
+
+    @include sm {
+        border-top-color: blue;
+        &:before {
+            content: "small";
+        }
+    }
+
+    @include md {
+        border-top-color: orange;
+        &:before {
+            content: "medium";
+        }
+    }
+
+    @include lg {
+        border-top-color: pink;
+        &:before {
+            content: "large";
+        }
+    }
+
+    @include xl {
+        border-top: 4px solid purple;
+        &:before {
+            content: "xlarge";
+        }
+    }
+}
+
