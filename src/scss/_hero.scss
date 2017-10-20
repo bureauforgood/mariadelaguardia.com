@@ -36,9 +36,11 @@
     font-size: 32px;
     line-height: 1.125;
     margin-bottom: 10px;
+
     @include md {
         font-size: 36px;
     }
+
     @include lg {
         font-size: 40px;
     }

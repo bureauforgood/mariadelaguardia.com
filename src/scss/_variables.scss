@@ -19,13 +19,24 @@ $neat-grid-lg-up: (
     gutter: $lg-gutter,
 );
 
+$neat-grid-xl-up: (
+    columns: 6,
+    gutter: 100px,
+);
+
 @mixin standard-grid {
     @include grid-column(6);
+
     @include md {
         @include grid-column(3, $neat-grid-md-up);
     }
+
     @include lg {
         @include grid-column(3, $neat-grid-lg-up);
+    }
+
+    @include xl {
+        @include grid-column(3, $neat-grid-xl-up);
     }
 }
 
@@ -67,16 +78,16 @@ $timing: 0.15s;
 
 // MEDIA QUERIES
 // Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
+$screen-sm-min: 0;
 
 // Small tablets (portrait view)
-$screen-md-min: 1024px; //640px;
+$screen-md-min: 768px; //640px;
 
 // Tablets and small desktops
-$screen-lg-min: 1440px; //1024px;
+$screen-lg-min: 1024px;
 
 // Large tablets and desktops
-$screen-xl-min: 1600px; //1440px;
+$screen-xl-min: 1440px;
 
 // Small devices
 @mixin sm {
