@@ -1,6 +1,6 @@
 var jQuery = require('jquery'),
     aminsition = require('animsition'),
-    rellax = require('rellax');
+    Rellax = require('rellax');
 
 jQuery(document).ready(function($) {
 
@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
         }, 1000);
     });
 
-    $(".animsition").animsition({
+    $('.animsition').animsition({
         inClass: 'fade-in-up-sm',
         outClass: 'fade-out-down-sm',
         inDuration: 600,
@@ -34,6 +34,12 @@ jQuery(document).ready(function($) {
         // overlayClass : 'animsition-overlay-slide',
         // overlayParentElement : 'body',
         // transition: function(url){ window.location.href = url; }
+    });
+
+    var rellax = new Rellax('.rellax', {
+        speed: -2,
+        center: false,
+        round: true,
     });
 
 });
