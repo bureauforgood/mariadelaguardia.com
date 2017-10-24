@@ -125,46 +125,46 @@ $screen-xl-min: 1440px;
 }
 
 
-body {
-    &:before {
-        content: 'defualt';
-        position: fixed;
-        top: -20px;
-        color: $white;
-        height: 20px;
-        width: 100%;
-        background: red;
-        top: 0;
-        left: 0;
-        z-index: 100000;
-    }
+// body {
+//     &:before {
+//         content: 'defualt';
+//         position: fixed;
+//         top: -20px;
+//         color: $white;
+//         height: 20px;
+//         width: 100%;
+//         background: red;
+//         top: 0;
+//         left: 0;
+//         z-index: 100000;
+//     }
 
-    @include sm {
-        &:before {
-            content: "small";
-            background: blue;
-        }
-    }
+//     @include sm {
+//         &:before {
+//             content: "small";
+//             background: blue;
+//         }
+//     }
 
-    @include md {
-        &:before {
-            content: "medium";
-            background: orange;
-        }
-    }
+//     @include md {
+//         &:before {
+//             content: "medium";
+//             background: orange;
+//         }
+//     }
 
-    @include lg {
-        &:before {
-            content: "large";
-            background: pink;
-        }
-    }
+//     @include lg {
+//         &:before {
+//             content: "large";
+//             background: pink;
+//         }
+//     }
 
-    @include xl {
-        &:before {
-            content: "xlarge";
-            background: purple;
-        }
-    }
-}
+//     @include xl {
+//         &:before {
+//             content: "xlarge";
+//             background: purple;
+//         }
+//     }
+// }
 
