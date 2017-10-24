@@ -1,5 +1,6 @@
 var jQuery = require('jquery'),
-    aminsition = require('animsition');
+    aminsition = require('animsition'),
+    rellax = require('rellax');
 
 jQuery(document).ready(function($) {
 
