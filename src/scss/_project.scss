@@ -168,10 +168,10 @@ $md-project-image-adjustment: 50px;
         }
         &.project__image--multi-holder {
             @include md {
-                left: -50px;
+                left: -60px;
             }
             @include lg {
-                left: -70px;
+                left: -100px;
             }
         }
     }
