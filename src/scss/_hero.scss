@@ -57,7 +57,7 @@
 
 .hero__imagecont {
     @include grid-column(2);
-    @include grid-push(0.5);
+    @include grid-push(1.1);
 }
 
 .hero__image {
