@@ -1,8 +1,8 @@
 var $ = require('jquery')(window);
     global.jQuery = require("jquery");
 var aminsition = require('animsition'),
-    Rellax = require('rellax'),
-    parollerJs = require('paroller.js');
+    Rellax = require('rellax');
+    //parollerJs = require('paroller.js');
 
 jQuery(document).ready(function($) {
 
