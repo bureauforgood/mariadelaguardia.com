@@ -5,7 +5,7 @@
     padding-bottom: 80px;
     overflow: hidden;
     @include md {
-        padding: 110px 0;
+        padding: 110px 0 180px;
         width: calc(100% - 53px);
     }
     @include lg {
