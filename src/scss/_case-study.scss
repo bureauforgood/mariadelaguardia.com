@@ -21,6 +21,12 @@
     @include xl {
         //padding: 100px $lg-gutter;
     }
+
+    &.next-casestudy {
+        .casestudy__body {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .casestudy__head {
@@ -63,6 +69,7 @@
 
 .casestudy__next-link {
     color: $blue;
+    margin-bottom: 0;
     &:after {
         content: "";
         width: 13px;
