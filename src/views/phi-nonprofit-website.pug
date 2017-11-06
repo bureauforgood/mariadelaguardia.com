@@ -1,0 +1,44 @@
+extends /layouts/_main.pug
+
+block metaVars
+	-
+		const meta = {
+			pageTitle: 'PHI Website',
+			description: 'A destination for up-to-date data on care worker demographics, wages and labor conditions.',
+			image: '/img/phi-cs-1.jpg'
+		};
+
+block canonicalUrl
+	- const canonicalUrl = 'https://www.mariadelaguardia.com/phi-nonprofit-website';
+
+block content
+	section.casestudy
+		.casestudy__image
+			img(src="/img/phi-cs-1.jpg")
+		.casestudy__wrapper
+			h1.casestudy__head PHI Website
+			.casestudy__body
+				p PHI works to improve the quality of residential care by improving the lives of the workers who provide that care. Working for #[a(href="https://constructive.co/", target="_blank") Constructive], I led the effort to overhaul the #[a(href="https://phinational.org/", target="_blank") PHI site]'s user experience and visual design based on PHI's new understanding of their audiences, and on a recent visual rebrand.
+			blockquote.casestudy__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
+			cite.casestudy__citation Matthew Schwartz, Constructive
+		.casestudy__image
+			img(src="/img/phi-cs-5.gif")
+		.casestudy__wrapper
+			h1.casestudy__subhead Information Architecture
+			.casestudy__body
+				p PHI's work is strongly divided into three relatively siloed areas: services, policy research, and advocacy—with fairly little audience overlap. Their challenge was to make their site intuitive for these non-overlapping audiences—presenting their service pitch while simultaneously positioning themselves as a storehouse and destination for current research and data on the demographics, wages and labor conditions of care workers; and effectively advocating for improved labor practices. With 26 templates and 12 content types, including a research publications library and an interactive data center, the robust new site offers a much improved experience for both visitors and content creators.
+			h1.casestudy__subhead Design
+			.casestudy__body
+				p Based on PHI's recent visual rebrand, my visual design approach takes a nontraditional route with a persistent, left-side, vertical navigation that uses a "drill-down" behavior—common in mobile interfaces—to help focus visitor attention at the current information level. A break-the-grid layout helps soften and add warmth to an otherwise dry content and messaging.
+		.casestudy__image
+			img(src="/img/phi-cs-2.jpg")
+		.casestudy__image
+			img(src="/img/phi-cs-3.jpg")
+		.casestudy__image
+			img(src="/img/phi-cs-4.jpg")
+		.casestudy__wrapper
+			p.casestudy__eyebrow See Also
+			h1.casestudy__head UWUA Union Benefits Campaign Minisite
+			.casestudy__body
+				p A bold and memorable campaign site for the Utility Workers Union of America, highlighting the contributions of strong unions to vibrant a middle class.
+				a.link.link--arrow.casestudy__next-link.animsition-link Case Study
