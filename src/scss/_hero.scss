@@ -48,6 +48,15 @@
 
 .hero__head--strong {
     @include serif-bold;
+    font-size: 30px;
+
+    @include md {
+        font-size: 34px;
+    }
+
+    @include lg {
+        font-size: 38px;
+    }
 }
 
 .hero__subhead {
@@ -70,5 +79,7 @@
         min-width: 248px;
         box-shadow: 0 0 60px rgba(0,0,0,0.3);
         border-radius: 50px;
+
+        //position: absolute;
     }
 }
