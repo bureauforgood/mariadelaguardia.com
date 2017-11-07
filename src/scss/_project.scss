@@ -392,7 +392,7 @@ $md-project-image-adjustment: 50px;
         }
     }
     @include lg {
-        padding-bottom: 0px;
+        padding-bottom: 50px;
     }
 }
 .project--1b {
@@ -451,6 +451,15 @@ $md-project-image-adjustment: 50px;
 .project--2of4 {
     @include project--layout-image-right;
     @include project--blue;
+
+    @include md {
+        margin-bottom: 180px;
+    }
+    @include lg {
+    }
+    @include lg {
+    }
+
     .project__image {
         margin-top: -20px;
         @include md {

@@ -1,6 +1,8 @@
-var jQuery = require('jquery'),
-    aminsition = require('animsition'),
+var $ = require('jquery')(window);
+    global.jQuery = require("jquery");
+var aminsition = require('animsition'),
     Rellax = require('rellax');
+    //parollerJs = require('paroller.js');
 
 jQuery(document).ready(function($) {
 
@@ -39,10 +41,12 @@ jQuery(document).ready(function($) {
 /*
     var rellax = new Rellax('.rellax', {
         // speed: -2,
-        // center: false,
+        center: true
         // round: true,
     });
 */
+
+    //$(window).paroller();
 
 });
 

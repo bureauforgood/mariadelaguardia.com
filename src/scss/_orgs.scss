@@ -19,7 +19,7 @@
 .orgs__logos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
-    grid-gap: 30px;
+    grid-gap: 50px 30px;
     @include md {
         grid-template-columns: repeat(auto-fill, minmax(188px, 1fr));
     }
