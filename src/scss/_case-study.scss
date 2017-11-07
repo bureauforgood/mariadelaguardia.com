@@ -50,9 +50,6 @@
 .casestudy__quote {
     @include quote;
     margin-bottom: 15px;
-    @include lg {
-        font-size: 30px;
-    }
 }
 
 .casestudy__citation {
