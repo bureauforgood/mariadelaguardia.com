@@ -38,11 +38,13 @@ jQuery(document).ready(function($) {
         // transition: function(url){ window.location.href = url; }
     });
 
+/*
     var rellax = new Rellax('.rellax', {
         // speed: -2,
         center: true
         // round: true,
     });
+*/
 
     //$(window).paroller();
 

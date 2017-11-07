@@ -1,0 +1,31 @@
+extends /layouts/_main.pug
+
+block metaVars
+	-
+		const meta = {
+			pageTitle: 'Public Interest Registry .ngo Domain Guide',
+			description: 'PIR works behind-the-scenes administering the top-level domains .org, .ngo and .ong. Their .ngo Domain Guide informs nonprofits on the process of acquiring the non-profit-exclusive .ngo domain.',
+			image: '/img/pir-domain-guide.jpg'
+		};
+
+block canonicalUrl
+	- const canonicalUrl = 'https://www.mariadelaguardia.com/public-interest-registry-nonprofit-brochure';
+
+block content
+	section.casestudy
+		.casestudy__image
+			img(src="/img/pir-domain-guide.jpg")
+		.casestudy__wrapper
+			h1.casestudy__head Public Interest Registry .ngo Domain Guide
+			.casestudy__body
+				p PIR works behind-the-scenes administering the top-level domains .org, .ngo and .ong. While .org domains have open registration, .ngo and .ong domains are reserved for registered nonprofits and international NGOs. PIR approached me to design a short guide to their .ngo and .ong domains, from the registration process to the benefits of acquiring one. Parts of this guide were translated to French, German and Portuguese. 
+			blockquote.casestudy__quote &ldquo;Maria delivers high quality design work in a timely manner. I have had the pleasure of working with Maria for the past 4 years, and she's continued to help PIR raise its own standards.&rdquo;
+			cite.casestudy__citation Megan Soffer, Marketing and Social Media Manager
+		.casestudy__image
+			img(src="/img/pir-domain-guide-2.jpg")
+		.casestudy__wrapper
+			p.casestudy__eyebrow See Also
+			h1.casestudy__head UWUA Minisite
+			.casestudy__body
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue. Quisque suscipit ante scelerisque turpis dignissim fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+				a.link.link--arrow.casestudy__next-link.animsition-link Case Study

@@ -1,0 +1,37 @@
+extends /layouts/_main.pug
+
+block metaVars
+	-
+		const meta = {
+			pageTitle: 'Drug Policy Alliance Digital & Print Annual Reports',
+			description: 'Print and digital annual reports for the nation&#39;s leading advocate for sensible drug laws.',
+			image: '/img/exposition-cs-1.jpg'
+		};
+
+block canonicalUrl
+	- const canonicalUrl = 'https://www.mariadelaguardia.com/exposition-website';
+
+block content
+	section.casestudy
+		.casestudy__image
+			img(src="/img/exposition-cs-1.jpg")
+		.casestudy__wrapper
+			h1.casestudy__head Drug Policy Alliance Digital & Print Annual Reports
+			.casestudy__body
+				p DPA is the nation's leading progressive voice on compassionate and common-sense drug laws, and I was proud to help them craft their 2016 print and #[a(href="http://www.drugpolicy.org/2016annualreport/", target="_blank") digital] annual reports. DPA has a bold and assertive brand identity, combining Helvetica at heavy weights, primary colors, and the motif of the square, which is also their logo; the client had already selected a square shape for their print piece. My aim was to translate those brand elements into something just as bold and unexpected. 
+				p I developed a visual theme around diagonal halftone images, arrow shapes and overlaps. While the text in both the digital and print pieces sits on a strong grid, the images and visual elements break from it, creating a layered effect.
+				p I designed the print piece first, and then translated it to the web using a takeover-screen presentation.
+			blockquote.casestudy__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
+			cite.casestudy__citation JAG DAVIES, DIRECTOR OF COMMUNICATIONS STRATEGY
+		.casestudy__image
+			img(src="/img/exposition-cs-2.jpg")
+		.casestudy__image
+			img(src="/img/exposition-cs-3.jpg")
+		.casestudy__image
+			img(src="/img/exposition-cs-4.jpg")
+		.casestudy__wrapper
+			p.casestudy__eyebrow See Also
+			h1.casestudy__head Sikh Coalition Website
+			.casestudy__body
+				p A contemporary new website for the leading voice for Sikh civil rights nationwide.
+				a.link.link--arrow.casestudy__next-link.animsition-link Case Study
