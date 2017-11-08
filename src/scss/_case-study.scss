@@ -44,6 +44,10 @@
     margin-bottom: 30px;
     p {
         @include body-copy;
+
+        a {
+            color: #EE5D2F;
+        }
     }
 }
 
