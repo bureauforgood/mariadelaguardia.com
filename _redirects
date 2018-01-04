@@ -1,2 +1,2 @@
 # Redirects from what the browser requests to what we serve
-https://mariadelaguardia.netlify.com http://www.mariadelaguardia.com 200
+https://mariadelaguardia.netlify.com* https://www.mariadelaguardia.com/:splat 301!
