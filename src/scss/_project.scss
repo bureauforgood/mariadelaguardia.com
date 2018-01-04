@@ -496,3 +496,25 @@ $md-project-image-adjustment: 50px;
         }
     }
 }
+
+.will-fade-in {
+    transition: opacity 1s, transform 1s;
+    opacity: 0;
+    transform: translate3d(0,100px,0);
+}
+
+.fade-in-delay-1 {
+    transition-delay: 250ms;
+}
+
+.fade-in-delay-2 {
+    transition-delay: 500ms;
+}
+
+.fade-in-delay-3 {
+    transition-delay: 750ms;
+}
+
+.fade-in-delay-4 {
+    transition-delay: 1000ms;
+}

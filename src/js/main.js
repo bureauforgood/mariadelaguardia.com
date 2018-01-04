@@ -1,8 +1,8 @@
 var $ = require('jquery')(window);
     global.jQuery = require("jquery");
-var aminsition = require('animsition'),
-    Rellax = require('rellax');
-    //parollerJs = require('paroller.js');
+var aminsition = require('animsition');
+    // Rellax = require('rellax');
+    // parollerJs = require('paroller.js');
 
 jQuery(document).ready(function($) {
 
@@ -38,15 +38,43 @@ jQuery(document).ready(function($) {
         // transition: function(url){ window.location.href = url; }
     });
 
-/*
-    var rellax = new Rellax('.rellax', {
-        // speed: -2,
-        center: true
-        // round: true,
-    });
-*/
+
+    // var rellax = new Rellax('.rellax', {
+    //     // speed: -2,
+    //     center: true,
+    //     round: true,
+    // });
+
+    // $('.project__image.project__image--single').each( function() {
+    //     var img = $(this).children();
+    //     var imgHeight = img.height();
+    //     console.log(imgHeight);
+    //     img.parent().height(imgHeight);
+    //     img.css('marginTop', - imgHeight / 2);
+    // });
 
     //$(window).paroller();
 
+    function scrollAction () {
+        $('.will-fade-in').each(function(i) {
+            var topOfItem = $(this).offset().top - 100,
+                bottomOfItem = $(this).offset().top + 100 + $(this).outerHeight(),
+                windowoff = $(window).scrollTop(),
+                windowOffset = $(window).scrollTop() + $(window).height();
+            if ((windowOffset > topOfItem && windowoff < topOfItem) || (windowOffset > bottomOfItem && windowoff < bottomOfItem) || topOfItem < windowoff && bottomOfItem > windowOffset) {
+                $(this).css({
+                    'opacity': 1,
+                    'transform': 'translate3d(0,0,0)'
+                });
+            } else {
+                $(this).attr('style', '');
+            }
+        });
+    }
+
+    scrollAction();
+
+    $(window).scroll(scrollAction);
 });
+
 
