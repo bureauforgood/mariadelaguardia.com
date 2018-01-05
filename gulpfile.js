@@ -73,10 +73,13 @@ gulp.task('pug',function() {
     .pipe(browserSync.stream());
 });
 
-// Copy Images & Fonts
+// Copy Images & Fonts & Netlify Redirects file (https://www.netlify.com/docs/redirects/)
 gulp.task('copy', function() {
     gulp.src([source+'img/**/*'])
     .pipe(gulp.dest(dist+'img'));
+
+    gulp.src([source+'_redirects'])
+    .pipe(gulp.dest(dist));
 
     gulp.src([source+'webfonts/**/*'])
     .pipe(gulp.dest(dist+'webfonts'))
