@@ -1,0 +1,44 @@
+extends /layouts/_main.pug
+
+block metaVars
+	-
+		const meta = {
+			pageTitle: 'TCTMD.com Website',
+			description: 'Website for the top online destination for professionals in the field of interventional cardiology.',
+			image: '/img/tctmd-3.jpg'
+		};
+
+block canonicalUrl
+	- const canonicalUrl = 'https://www.mariadelaguardia.com/tctmd-news-editorial-site';
+
+block content
+	section.casestudy
+		.casestudy__image
+			img(src="/img/tctmd-3.jpg")
+		.casestudy__wrapper
+			h1.casestudy__head TCTMD.com Website
+			.casestudy__body
+				p Working for #[a(href="https://constructive.co/", target="_blank") Constructive], one of the nation's top design agencies serving nonprofits, I helped carry out a complete overhaul of #[a(href="https://www.tctmd.com", target="_blank") TCTMD.com], the cardiovascular industry’s top online destination for interventional cardiovascular medicine. With only six short months until their biggest annual conference, I led the digital strategy, information architecture, user experience, and visual design project phases to help CRF rethink TCTMD.com from the inside-out.
+			blockquote.casestudy__quote &ldquo;Maria is, quite simply, the best designer I’ve ever worked with. Not just because of her creative abilities and skill with the fundamentals of effective visual and UX design—but also because she’s a smart, strategic thinker who embraces complexity, understands content, and knows how to translate organizational goals into valuable brand experiences.&rdquo;
+			cite.casestudy__citation Matthew Schwartz, Constructive
+		.casestudy__image
+			img(src="/img/tctmd-7.gif")
+		.casestudy__wrapper
+			h2.casestudy__subhead Information Architecture
+			.casestudy__body
+				p TCTMD.com relies heavily on ad revenue and subscriptions to fund operations. My work entailed rethinking their entire user experience approach, creating clear distinctions between their branded columns, prioritizing visitor flows to related content, and highlighting their most high-value calls to action. An integrated content taxonomy and page template system displays a breadth of relevant options without over-stuffing pages to ensure a great reading experience.
+			h2.casestudy__subhead Design
+			.casestudy__body
+				p During the visual design phase, I transformed the wireframes and technical specifications I created into a crisp, clean, contemporary brand experience. TCTMD.com takes its cues from best practices in news and media website design, presenting a premium brand that’s in keeping with the site’s status as a leading destination for specialized medical content. A clear visual hierarchy indicating content departments, topics, and formats helps guide users through content-heavy pages. Videos and presentations—two of the site’s the most valuable content, are elevated. And calls-to-action focus attention on member-only content to help drive subscriptions.
+		.casestudy__image
+			img(src="/img/tctmd-5.jpg")
+		.casestudy__image
+			img(src="/img/tctmd-4.jpg")
+		.casestudy__image
+			img(src="/img/tctmd-6.jpg")
+		.casestudy__wrapper.next-casestudy
+			p.casestudy__eyebrow See Also
+			h1.casestudy__head Bureau for Good
+			.casestudy__body
+				p Website for own design company, offering affordable print and digital materials for nonprofits.
+				a.link.link--arrow.casestudy__next-link.animsition-link(href="bureau-for-good-nonprofit-annual-reports.html") Case Study
