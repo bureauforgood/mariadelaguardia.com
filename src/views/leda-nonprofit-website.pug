@@ -1,0 +1,36 @@
+extends /layouts/_main.pug
+
+block metaVars
+	-
+		const meta = {
+			pageTitle: 'LEDA Website',
+			description: 'A new digital home for LEDA, and organization that works to identify and develop the academic potential of exceptional, disadvantaged public high school students.',
+			image: '/img/leda-top.jpg'
+		};
+
+block canonicalUrl
+	- const canonicalUrl = 'https://www.mariadelaguardia.com/leda-nonprofit-website';
+
+block content
+	section.casestudy
+		.casestudy__image
+			img(src="/img/leda-top.jpg")
+		.casestudy__wrapper
+			h1.casestudy__head LEDA Website
+			.casestudy__body
+				p The Leadership Enterprise for a Diverse America (#[a(href="http://ledascholars.org", target="_blank") LEDA]) works to identify and develop the academic potential of exceptional, disadvantaged public high school students. Their new website highlights individual impact stories and data, including their stats on rate of acceptance to the nation's top schools.  
+			//
+				blockquote.casestudy__quote &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ipsum augue.&rdquo;
+				cite.casestudy__citation MATT SCHWARTZ, CONSTRUCTIVE
+			//
+		.casestudy__image
+			img(src="/img/leda-cs-2.jpg")
+		.casestudy__image
+			img(src="/img/leda-cs-3.jpg")
+		.casestudy__wrapper.next-casestudy
+			p.casestudy__eyebrow See Also
+			h1.casestudy__head PHI Website
+			.casestudy__body
+				p PHI works to improve the quality of residential care by improving the lives of the workers who provide that care. Their new site is a destination for up-to-date data on care worker demographics, wages and labor conditions.
+				a.link.link--arrow.casestudy__next-link.animsition-link(href="phi-nonprofit-website.html") Case Study
+
