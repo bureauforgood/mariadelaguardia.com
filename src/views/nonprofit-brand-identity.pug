@@ -1,0 +1,29 @@
+extends /layouts/_main.pug
+
+block metaVars
+	-
+		const meta = {
+			pageTitle: 'Nonprofit Brand Identity Projects',
+			description: 'Brand identity projects from the last several years.',
+			image: '/img/logos-cover.gif'
+		};
+
+block canonicalUrl
+	- const canonicalUrl = 'https://www.mariadelaguardia.com/union-campaign-nonprofit-minisite';
+
+block content
+	section.casestudy
+		.casestudy__image
+			img(src="/img/logos-cover.gif")
+		.casestudy__wrapper
+			h1.casestudy__head Nonprofit Brand Identity Projects
+			.casestudy__body
+				p A sampling of recent brand identity projects, with more to be added soon.s
+		.casestudy__image
+			img(src="/img/wcf-cs-2.jpg")
+		.casestudy__wrapper.next-casestudy
+			p.casestudy__eyebrow See Also
+			h1.casestudy__head Exposition Website 
+			.casestudy__body
+				p Website for a platform for publishing vibrant interactive reports, created by my friends at Constructive.
+				a.link.link--arrow.casestudy__next-link.animsition-link(href="exposition-website.html") Case Study
